@@ -10,7 +10,7 @@ export const en = {
   },
   home: {
     hero: {
-      title: 'Welcome to Mi Alegría Daycare',
+      title: 'Welcome to',
       subtitle: 'Where Joy and Learning Come Together',
       cta: 'Schedule a Visit',
     },

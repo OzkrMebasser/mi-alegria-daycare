@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { Inter, Fredoka } from 'next/font/google';
 // import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import I18nProvider  from '@/components/I18nProvider';
+import I18nProvider  from '@/hooks/I18nProvider';
 
 
 const inter = Inter({ 
