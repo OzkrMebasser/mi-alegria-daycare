@@ -88,7 +88,7 @@ const Navbar = () => {
                     alt="MI ALEGRIA DAYCARE LOGO"
                     width={100}
                     height={100}
-                    className="w-auto mr-2 h-[80px]"
+                    className="w-auto mr-2 h-[65px]"
                   />
                 </Link>
               </div>
