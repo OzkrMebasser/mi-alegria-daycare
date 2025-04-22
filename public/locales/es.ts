@@ -2,7 +2,6 @@
 export const es = {
   nav: {
     home: 'Inicio',
-    home2: 'Inicio 2',
     services: 'Servicios',
     about: 'Nosotros',
     contact: 'Contacto',
