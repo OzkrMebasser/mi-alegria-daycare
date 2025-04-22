@@ -36,7 +36,7 @@ const Navbar = () => {
 
   const navItems: NavItem[] = [
     {
-      href: "/home",
+      href: "/",
       label: t("nav.home"),
       btnBgHover: "hover:bg-yellow-300",
       btnBgActive: "bg-yellow-300 text-gray-800",

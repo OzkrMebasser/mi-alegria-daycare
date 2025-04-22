@@ -1,5 +1,5 @@
-import HeroImgSlider from "@/components/HeroImgSlider";
-import Home from "./Home";
+
+import Home from "../../components/Home";
 
 const page = () => {
   return (

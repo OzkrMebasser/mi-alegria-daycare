@@ -4,10 +4,10 @@ import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import DualNavbar from "@/components/DualNavbar";
 
-const MainLayout = () => {
+const NavbarLayout = () => {
   const pathname = usePathname();
 
-  return <>{pathname === "/home" ? <DualNavbar /> : <Navbar />}</>;
+  return <>{pathname === "/" ? <DualNavbar /> : <Navbar />}</>;
 };
 
-export default MainLayout;
+export default NavbarLayout;

@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Fredoka } from "next/font/google";
-import MainLayout from "@/components/MainLayout";
+import NavbarLayout from "@/components/NavbarLayout";
 import Footer from "@/components/Footer";
 import I18nProvider from "@/hooks/I18nProvider";
 import 'flag-icons/css/flag-icons.min.css';
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${fredoka.variable}`}>
       <body className="min-h-screen flex flex-col">
         <I18nProvider>
-          <MainLayout />
+          <NavbarLayout />
           {/* Main content */}
           <main className="flex-grow">{children}</main>
           <Footer />

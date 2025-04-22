@@ -24,7 +24,7 @@ const LeftSideNavbar = () => {
 
   const navItems: NavItem[] = [
     {
-      href: "/home",
+      href: "/",
       label: t("nav.home"),
       icon: <BiHomeSmile />,
       hoverClass: "hover:text-yellow-300",
