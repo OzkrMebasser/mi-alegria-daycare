@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { FaChild } from "react-icons/fa";
 import { FaHandsHoldingChild } from "react-icons/fa6";
+import { HiOutlineMenuAlt3, HiX  } from "react-icons/hi";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation"; 
 import { useLanguage } from "../hooks/useLanguage"; 
@@ -9,7 +11,6 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false); 
 
   // Obtiene la ruta actual
@@ -18,14 +19,6 @@ const Navbar = () => {
   // Usa el hook personalizado para manejar el idioma
   const { t, language, handleLanguageChange } = useLanguage();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Puedes ajustar el valor
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   interface NavItem {
     href: string;
@@ -75,7 +68,7 @@ const Navbar = () => {
           <div className="flex justify-between h-auto mx-auto">
             <div className="flex items-center h-auto">
               <Link
-                href="/home"
+                href="/"
                 className="flex items-center transition-all duration-300"
               >
                 <Image
@@ -155,9 +148,9 @@ const Navbar = () => {
                 className="focus:outline-none"
               >
                 {isOpen ? (
-                  <FaChild className="h-7 w-7 text-gray-700" />
+                  <HiX className="h-7 w-7 text-gray-700" />
                 ) : (
-                  <FaHandsHoldingChild className="h-8 w-8 text-gray-700" />
+                  <HiOutlineMenuAlt3 className="h-8 w-8 text-gray-700" />
                 )}
               </button>
             </div>
@@ -172,7 +165,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center space-x-2 px-3 py-2 rounded-md text-gray-600 hover:text-primary-dark hover:bg-gray-50 ${
+                  className={`flex items-center space-x-2 px-3 py-2 rounded-md text-gray-600 hover:text-gray-800 ${
                     pathname === item.href ? item.btnBgActive : ""
                   }`}
                   onClick={() => setIsOpen(false)}

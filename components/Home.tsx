@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { FaShieldAlt, FaGraduationCap, FaLanguage } from "react-icons/fa";
 import SimpleMap from "@/components/SImpleMap";
 import HeroImgSlider from "@/components/HeroImgSlider";
+import HomeSection from "./HomeSection";
 import Image from "next/image";
 
 const images = [
@@ -45,8 +46,10 @@ export default function Home() {
         {/* Hero Section */}
         <HeroImgSlider images={images} />
 
+  
+
         {/* Features Section */}
-        <section className="py-16 bg-white">
+        {/* <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display text-3xl text-center text-gray-800 mb-12">
               {t("home.features.title")}
@@ -66,7 +69,10 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+          
+          {/* Home Section */}
+        <HomeSection/>
 
         {/* Map Section */}
 

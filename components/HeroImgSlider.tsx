@@ -32,7 +32,8 @@ const Hero = ({ images }: HeroProps) => {
     }`;
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[78vh] sm:h-[70vh] md:h-screen overflow-hidden">
+
       {/* Overlayer */}
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20 z-10"></div> */}
 

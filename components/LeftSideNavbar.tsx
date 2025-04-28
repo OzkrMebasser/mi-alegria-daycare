@@ -20,7 +20,7 @@ interface NavItem {
 
 const LeftSideNavbar = () => {
   const { t, toggleLangMenu, handleLanguageChange, isLangMenuOpen, language } =
-    useLanguage(); // Asegúrate de desestructurar `language`
+    useLanguage();
 
   const navItems: NavItem[] = [
     {
@@ -111,11 +111,8 @@ const LeftSideNavbar = () => {
                 className="flex items-center gap-2 px-2 py-1 hover:bg-white hover:text-gray-700 cursor-pointer rounded-tr-md border-b-[1px]"
                 onClick={() => handleLanguageChange("en")}
               >
-
-<span className="fi fi-ca w-5 h-5 rounded-sm"></span>
-<span>English</span>
-
-               
+                <span className="fi fi-ca w-5 h-5 rounded-sm"></span>
+                <span>English</span>
               </li>
               <li
                 className="flex items-center gap-2 px-2 py-1 hover:bg-white hover:text-gray-700 cursor-pointer rounded-br-md"
@@ -130,7 +127,7 @@ const LeftSideNavbar = () => {
       </nav>
 
       {/* Mobile View */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 h-20 bg-white flex justify-around items-center z-50">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 h-[5rem] bg-[#ffffff] flex justify-around items-center z-50 shadow-[0px_-1px_4px_0px_rgba(0,_0,_0,_0.1)]">
         <ul className="flex justify-around w-full items-center">
           {navItems.map((item, index) => (
             <li
@@ -175,15 +172,13 @@ const LeftSideNavbar = () => {
                   className="flex items-center gap-2 px-2 py-1 hover:bg-white cursor-pointer rounded-md border-b-[1px]"
                   onClick={() => handleLanguageChange("en")}
                 >
-                <span className="fi fi-ca w-5 h-5 rounded-sm"></span>
-                <span>English</span>
+                  <span className="fi fi-ca w-5 h-5 rounded-sm"></span>
+                  <span>English</span>
                 </li>
                 <li
                   className="flex items-center gap-2 px-2 py-1 hover:bg-white cursor-pointer rounded-bl-md rounded-br-md"
                   onClick={() => handleLanguageChange("es")}
                 >
-                 
-
                   <span className="fi fi-mx w-5 h-5 rounded-sm"></span>
                   <span>Español</span>
                 </li>
