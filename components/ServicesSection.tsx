@@ -229,11 +229,11 @@ const ServicesSection = () => {
                         <span className="mx-2">—</span>
                         <span>Lunch time</span>
                       </li>
-                      <li className="flex items-center">
+                      {/* <li className="flex items-center">
                         <span className="font-medium">3:00-3:30</span>
                         <span className="mx-2">—</span>
                         <span>Afternoon snack</span>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className="bg-yellow-50 p-4 rounded-lg">

@@ -2,10 +2,12 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Fredoka } from "next/font/google";
 import NavbarLayout from "@/components/NavbarLayout";
+import WhatsAppButton from "@/components/WhatsAppBtn";
 import Footer from "@/components/Footer";
 import I18nProvider from "@/hooks/I18nProvider";
 import 'flag-icons/css/flag-icons.min.css';
 import "leaflet/dist/leaflet.css";
+
 
 
 const inter = Inter({
@@ -34,6 +36,8 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <I18nProvider>
           <NavbarLayout />
+          <WhatsAppButton />
+          {/* Add your main content here */}
           {/* Main content */}
           <main className="flex-grow">{children}</main>
           <Footer />
