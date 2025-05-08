@@ -73,28 +73,28 @@ const HomeSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
-            icon={<FaHome className="text-blue-500" />}
+            icon={<FaHome className="text-blue-900" />}
             title={t("homeSection.features.safe.title")}
             description={t("homeSection.features.safe.description")}
-            bgColor="bg-blue-200/30"
+            bgColor="bg-blue-100"
           />
           <FeatureCard
-            icon={<FaChild className="text-purple-500" />}
+            icon={<FaChild className="text-purple-900" />}
             title={t("homeSection.features.learning.title")}
             description={t("homeSection.features.learning.description")}
-            bgColor="bg-purple-200/30"
+            bgColor="bg-purple-100"
           />
           <FeatureCard
-            icon={<FaHeart className="text-red-500" />}
+            icon={<FaHeart className="text-red-900" />}
             title={t("homeSection.features.caring.title")}
             description={t("homeSection.features.caring.description")}
-            bgColor="bg-red-200/30"
+            bgColor="bg-red-100"
           />
           <FeatureCard
-            icon={<FaBiking className="text-green-500" />}
+            icon={<FaBiking className="text-yellow-900" />}
             title={t("homeSection.features.active.title")}
             description={t("homeSection.features.active.description")}
-            bgColor="bg-green-200/30"
+            bgColor="bg-yellow-100"
           />
         </div>
       </div>
@@ -138,6 +138,7 @@ const HomeSection = () => {
 
 interface FeatureCardProps {
   icon: React.ReactNode;
+
   title: string;
   description: string;
   bgColor: string;
@@ -150,8 +151,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   bgColor,
 }) => {
   return (
-    <div className={`${bgColor} bg-white p-6 rounded-lg shadow-lg text-center`}>
-      <div className="text-4xl mb-4 flex justify-center">{icon}</div>
+    <div className={`${bgColor}  p-6 rounded-lg shadow-lg text-center`}>
+      <div className={`text-4xl mb-4 flex justify-center `}>{icon}</div>
       <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
