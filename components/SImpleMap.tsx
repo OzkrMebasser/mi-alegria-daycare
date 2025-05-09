@@ -32,7 +32,7 @@ const SimpleMap = () => {
         {/* Círculo azul transparente */}
         <Circle
           center={position} // Tipo: [number, number]
-          radius={3000} // Tipo: number (en metros)
+          radius={1500} // Tipo: number (en metros)
           pathOptions={{
             fillColor: "blue", // Tipo: string
             fillOpacity: 0.3, // Tipo: number

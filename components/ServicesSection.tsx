@@ -14,13 +14,25 @@ import SwiperCubeSlides from "./SwiperCubeSlides/SwiperCubeSlides";
 
 const ServicesSection = () => {
   const [activeTab, setActiveTab] = useState("daily");
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const tabs = [
-    { id: "daily", name: "Daily Program", icon: <FaClock /> },
-    { id: "development", name: "Child Development", icon: <FaBrain /> },
-    { id: "nutrition", name: "Nutrition", icon: <FaAppleAlt /> },
-    { id: "safety", name: "Safety & Wellbeing", icon: <FaShieldAlt /> },
+    { id: "daily", name: `${t("services.tabs.daily")}`, icon: <FaClock /> },
+    {
+      id: "development",
+      name: `${t("services.tabs.development")}`,
+      icon: <FaBrain />,
+    },
+    {
+      id: "nutrition",
+      name: `${t("services.tabs.nutrition")}`,
+      icon: <FaAppleAlt />,
+    },
+    {
+      id: "safety",
+      name: `${t("services.tabs.safety")}`,
+      icon: <FaShieldAlt />,
+    },
   ];
 
   return (
@@ -28,11 +40,13 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Our Services
+            {/* Our Services */}
+            {t("services.title")}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            At Mi Alegria Daycare, we provide comprehensive care services
-            focused on your child&apos;s growth, development, and happiness.
+            {/* At Mi Alegria Daycare, we provide comprehensive care services
+            focused on your child&apos;s growth, development, and happiness. */}
+            {t("services.intro")}
           </p>
         </div>
 
@@ -61,11 +75,13 @@ const ServicesSection = () => {
             <div className="animate-fadeIn">
               <div className="bg-white ">
                 <h2 className="text-2xl font-bold text-blue-600 mb-6">
-                  Daily Program
+                  {/* Daily Program */}
+                  {t("services.daily.title")}
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Our structured daily program is designed to provide a balance
-                  of learning, play, and rest for your child.
+                  {t("services.daily.description")}
+                  {/* Our structured daily program is designed to provide a balance
+                  of learning, play, and rest for your child. */}
                 </p>
               </div>
               {/* <h2 className="text-2xl font-bold text-blue-600 mb-6">
@@ -73,28 +89,47 @@ const ServicesSection = () => {
               </h2> */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  {/* <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                    Our Structured Schedule
-                  </h3> */}
-                  {/* <p className="text-gray-600 mb-6">
-                    We follow a consistent daily routine that provides children
+                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                    {/* Our Structured Schedule */}
+                    {t("services.daily.subTitle")}
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    {/* We follow a consistent daily routine that provides children
                     with a sense of security while encouraging learning and
-                    play.
-                  </p> */}
+                    play. */}
+                    {t("services.daily.subDescription")}
+                  </p>
                   <div className="bg-blue-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-lg mb-2 text-gray-800">
-                      Daily Schedule:
+                      {/* Daily Schedule: */}
+                      {t("services.daily.scheduleTitle")}
                     </h4>
                     <ul className="space-y-2 text-gray-700 text-sm lg:text-base">
+                      <li className="grid grid-cols-[.6fr_2fr] text-sm lg:text-base h-[3rem]">
+                        <span className="bg-teal-600 border-r-1 font-medium flex items-center pl-2">
+                          8:00-8:30   <span className="mx-2 font-thin">—</span>
+                        </span>
+                        <span className=" items-left bg-red-500 ">
+                          {t("services.daily.schedule.activity2")}
+                        </span>
+                      </li>
+
                       <li className="flex items-center ">
-                        <span className="font-medium">8:00-8:30</span>
+                        <span className="font-medium">8:30-9:00</span>
                         <span className="mx-2">—</span>
-                        <span>Arrival/greeting children - free play</span>
+                        <span>
+                          {/*Activiy 2*/}
+                          {/* Crafts / Drawing Activities, Clean up, toilet routine and handwashing */}
+                          {t("services.daily.schedule.activity2")}
+                        </span>
                       </li>
                       <li className="flex items-center">
                         <span className="font-medium">9:00-9:30</span>
                         <span className="mx-2">—</span>
-                        <span>Leave to playgroup or park</span>
+                        <span>
+                          {/* Leave to playgroup or park */}
+                          {t("services.daily.schedule.activity2")}
+                        </span>
                       </li>
                       <li className="flex items-center">
                         <span className="font-medium">12:00-12:30</span>
@@ -145,10 +180,9 @@ const ServicesSection = () => {
                   </div>
                 </div>
                 <div>
-                  <div className=" bg-gray-200 h-[15rem] lg:h-[28rem] relative mb-12 lg:mb-0 rounded-lg">
+                  <div className=" bg-gray-200 h-[15rem] lg:h-[28rem] relative mb-[4rem] lg:mt-8 lg:mb-0 rounded-lg">
                     {/*Images Cube slider*/}
-                  <SwiperCubeSlides />
-                
+                    <SwiperCubeSlides />
                   </div>
                 </div>
               </div>
@@ -229,11 +263,6 @@ const ServicesSection = () => {
                         <span className="mx-2">—</span>
                         <span>Lunch time</span>
                       </li>
-                      {/* <li className="flex items-center">
-                        <span className="font-medium">3:00-3:30</span>
-                        <span className="mx-2">—</span>
-                        <span>Afternoon snack</span>
-                      </li> */}
                     </ul>
                   </div>
                   <div className="bg-yellow-50 p-4 rounded-lg">

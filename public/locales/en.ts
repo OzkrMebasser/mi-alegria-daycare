@@ -50,22 +50,96 @@ export const en = {
 
   services: {
     title: "Our Services",
-    programs: {
-      infants: {
-        title: "Infant Care",
-        age: "6 weeks - 18 months",
-        description: "Nurturing care for your little ones",
+    intro:
+      "At Mi Alegria Daycare, we provide comprehensive care services focused on your child's growth, development, and happiness.",
+    tabs: {
+      daily: "Daily Program",
+      development: "Child Development",
+      nutrition: "Nutrition",
+      safety: "Safety & Wellbeing",
+    },
+    daily: {
+      title: "Daily Program",
+      description:
+        "Our structured daily program is designed to provide a balance of learning, play, and rest for your child.",
+      subTitle: "Our Structured Schedule",
+      subDescription:
+        "We follow a consistent daily routine that provides children with a sense of security while encouraging learning and play.",
+      scheduleTitle: "Sample Daily Schedule",
+      schedule: {
+        activity1: "Arrival/greeting children - free play",
+        activity2: "Crafts / Drawing Activities, Clean up, toilet routine and handwashing",
+        activity3: "Leave to playgroup or park",
+        activity4: "Playgroup and outdoor play",
+        activity5: "Lunch time",
+        activity6: "Nap time",
+        activity7: "Snack and free play",
+        activity8: "Story time in Spanish",
+        activity9: "Outdoor play/Going Home",
+        
       },
-      toddlers: {
-        title: "Toddler Program",
-        age: "18 months - 3 years",
-        description: "Active learning through play",
+      outdoorTitle: "Outdoor Activities",
+      outdoorText:
+        "Daily visits to the park and participation in local playgroups for socialization and physical activity.",
+      indoorTitle: "Indoor Activities",
+      indoorText: "Engaging educational and creative play inside the daycare.",
+    },
+    development: {
+      title: "Child Development",
+      description:
+        "Our child-centered approach supports the five developmental domains, helping each child grow and learn at their own pace.",
+      cards: {
+        social: {
+          title: "Social Development",
+          description:
+            "Building relationships, learning to share, developing empathy, and working cooperatively with others.",
+        },
+        emotional: {
+          title: "Emotional Development",
+          description:
+            "Helping children recognize, understand, and express their emotions in healthy ways.",
+        },
+        cognitive: {
+          title: "Cognitive Development",
+          description:
+            "Encouraging curiosity, problem-solving, and the development of early literacy and math skills.",
+        },
+        language: {
+          title: "Language Development",
+          description:
+            "Fostering communication through speaking, listening, and storytelling in both Spanish and English.",
+        },
+        physical: {
+          title: "Physical Development",
+          description:
+            "Promoting motor skills through active play, both indoors and outdoors.",
+        },
       },
-      preschool: {
-        title: "Preschool",
-        age: "3 - 5 years",
-        description: "Preparing for kindergarten success",
-      },
+    },
+    nutrition: {
+      title: "Nutrition",
+      description:
+        "We provide healthy, balanced meals and snacks to support your child's physical growth and energy needs.",
+      habitsTitle: "Healthy Eating Habits",
+      habitsText:
+        "We encourage children to try new foods and develop positive mealtime routines.",
+      scheduleTitle: "Meal Schedule",
+      schedule: [
+        { name: "Morning Snack", time: "8:30 AM" },
+        { name: "Lunch", time: "11:30 AM" },
+        { name: "Afternoon Snack", time: "2:00 PM" },
+      ],
+    },
+    safety: {
+      title: "Safety & Wellbeing",
+      description:
+        "Your child's safety and wellbeing are our top priorities. We maintain a secure environment and follow strict health protocols.",
+      items: [
+        "Secure facility with childproofing and monitoring",
+        "Daily health checks and cleanliness protocols",
+        "CPR and First Aid certified staff",
+        "Open communication with parents about any concerns",
+      ],
     },
   },
   about: {
