@@ -62,27 +62,35 @@ export const es = {
     daily: {
       title: "Programa Diario",
       description:
-        "Nuestro programa diario estructurado está diseñado para ofrecer un equilibrio entre aprendizaje, juego y descanso.",
+        "Nuestro programa diario estructurado está diseñado para proporcionar un equilibrio entre aprendizaje, juego y descanso para tu hijo.",
       subTitle: "Nuestro Horario Estructurado",
       subDescription:
         "Seguimos una rutina diaria constante que brinda a los niños una sensación de seguridad mientras fomenta el aprendizaje y el juego.",
-
-      scheduleTitle: "Ejemplo de Horario Diario",
+      scheduleTitle: "Horario Diario (aproximado)",
       schedule: {
-        activity1: "Llegada / saludo a los niños - juego libre",
-        activity2: "Salida al grupo de juego o al parque",
-        activity3: "Grupo de juego y juegos al aire libre",
-        activity4: "Hora del almuerzo",
-        activity5: "Hora de la siesta",
-        activity6: "Merienda y juego libre",
-        activity7: "Hora del cuento en español",
-        activity8: "Juego al aire libre / Hora de ir a casa",
+        activity1: "Llegada / bienvenida - Juego libre",
+        activity2:
+          "Manualidades / Actividades de dibujo - Limpieza, rutina de baño y lavado de manos",
+        activity3:
+          "Salida al grupo de juegos o parque - Limpieza y lavado de manos",
+        activity4: "Grupo de juegos",
+        activity5: "Juego al aire libre",
+        activity6: "Hora del cuento en español - Rutina de baño",
+        activity7: "Siesta / Tiempo tranquilo - Limpieza y lavado de manos",
+        activity8:
+          "Hora de la merienda - Limpieza, rutina de baño y lavado de manos",
+        activity9:
+          "Juego al aire libre / Tiempo libre - Limpieza y rutina de baño",
+        snackTime: "Hora de la merienda",
+        lunchTime: "Hora del almuerzo - Limpieza y lavado de manos",
+        goingHome: "Hora de salida",
       },
       outdoorTitle: "Actividades al Aire Libre",
       outdoorText:
         "Visitas diarias al parque y participación en grupos de juego locales para fomentar la socialización y la actividad física.",
-      indoorTitle: "Actividades en Interiores",
-      indoorText: "Juegos educativos y creativos dentro de la guardería.",
+        physicalTitle: "Desarrollo físico",
+        physicalText: "Al menos 60 minutos de juego activo diario para niños en edad preescolar, con una variedad de actividades en interiores y al aire libre."
+        
     },
     development: {
       title: "Desarrollo Infantil",

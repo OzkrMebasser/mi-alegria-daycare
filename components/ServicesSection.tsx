@@ -104,84 +104,152 @@ const ServicesSection = () => {
                       {/* Daily Schedule: */}
                       {t("services.daily.scheduleTitle")}
                     </h4>
-                    <ul className="space-y-2 text-gray-700 text-sm lg:text-base">
-                      <li className="grid grid-cols-[.6fr_2fr] text-sm lg:text-base h-[3rem]">
-                        <span className="bg-teal-600 border-r-1 font-medium flex items-center pl-2">
-                          8:00-8:30   <span className="mx-2 font-thin">—</span>
+                    <ul className=" text-gray-700 text-sm ">
+                      {/*Activiy 1*/}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          8:00-8:30
                         </span>
-                        <span className=" items-left bg-red-500 ">
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity1")}
+                        </span>
+                      </li>
+                      {/*Activiy 2*/}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          8:30-9:00
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
                           {t("services.daily.schedule.activity2")}
                         </span>
                       </li>
+                      {/*Activiy 3*/}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          9:00-9:30
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity3")}
+                        </span>
+                      </li>
+                      {/*Activiy snackTime*/}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          10:00-10:15
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.snackTime")}
+                        </span>
+                      </li>
+                      {/*Activiy 4 */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          10:15-11:30
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity4")}
+                        </span>
+                      </li>
+                      {/*Activiy 5 */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          11:45-12:00
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity5")}
+                        </span>
+                      </li>
+                      {/*Activiy lunchTime */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          12:00-12:30
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.lunchTime")}
+                        </span>
+                      </li>
+                      {/*Activiy 6  */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          12:30-1:00
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity6")}
+                        </span>
+                      </li>
+                      {/*Activiy 7  */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          1:00-3:00
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity7")}
+                        </span>
+                      </li>
+                      {/*Activiy 8  */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          3:00-3:30
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity8")}
+                        </span>
+                      </li>
+                      {/*Activity 9 */}
 
-                      <li className="flex items-center ">
-                        <span className="font-medium">8:30-9:00</span>
-                        <span className="mx-2">—</span>
-                        <span>
-                          {/*Activiy 2*/}
-                          {/* Crafts / Drawing Activities, Clean up, toilet routine and handwashing */}
-                          {t("services.daily.schedule.activity2")}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          3:30-3:45
+                        </span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.activity9")}
                         </span>
                       </li>
-                      <li className="flex items-center">
-                        <span className="font-medium">9:00-9:30</span>
-                        <span className="mx-2">—</span>
-                        <span>
-                          {/* Leave to playgroup or park */}
-                          {t("services.daily.schedule.activity2")}
+                      {/*Activity goingHome */}
+                      <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                        <span className="border-r border-gray-200 font-medium flex items-center pl-2">
+                          4:00 pm
                         </span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="font-medium">12:00-12:30</span>
-                        <span className="mx-2">—</span>
-                        <span>Lunch time</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="font-medium">12:30-1:00</span>
-                        <span className="mx-2">—</span>
-                        <span>Story time in Spanish</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="font-medium">1:00-3:00</span>
-                        <span className="mx-2">—</span>
-                        <span>Nap time/Quiet time</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="font-medium">3:30-4:00</span>
-                        <span className="mx-2">—</span>
-                        <span>Outdoor play/Going Home</span>
+                        <span className="p-2 flex items-center text-justify">
+                          {t("services.daily.schedule.goingHome")}
+                        </span>
                       </li>
                     </ul>
                   </div>
-                  <div className="flex items-center mt-6">
-                    <FaWalking className="text-4xl text-green-500 mr-4" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800">
-                        Outdoor Activities
-                      </h3>
-                      <p className="text-gray-600">
-                        Daily visits to the park and participation in local
-                        playgroups for socialization and physical activity.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center mt-6">
-                    <FaHeartbeat className="text-4xl text-red-500 mr-4" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800">
-                        Physical Development
-                      </h3>
-                      <p className="text-gray-600">
-                        At least 60 minutes of active play daily for
-                        preschoolers, with a variety of indoor and outdoor
-                        activities.
-                      </p>
-                    </div>
-                  </div>
                 </div>
                 <div>
+                  <div className="flex items-center">
+                    <FaWalking className="text-7xl lg:text-4xl text-green-500 mr-4" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-800">
+                        {/* Outdoor Activities */}
+                        {t("services.daily.outdoorTitle")}
+                      </h3>
+                      <p className="text-gray-600">
+                        {/* Daily visits to the park and participation in local
+                        playgroups for socialization and physical activity. */}
+                        {t("services.daily.outdoorText")}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center mt-6 mb-8 lg:mb-0">
+                    <FaHeartbeat className="text-8xl lg:text-5xl text-red-500 mr-3" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-800">
+                        {/* Physical Development */}
+                        {t("services.daily.physicalTitle")}
+                      </h3>
+                      <p className="text-gray-600">
+                        {/* At least 60 minutes of active play daily for
+                        preschoolers, with a variety of indoor and outdoor
+                        activities. */}
+                         {t("services.daily.physicalText")}
+                      </p>
+                    </div>
+                  </div>
                   <div className=" bg-gray-200 h-[15rem] lg:h-[28rem] relative mb-[4rem] lg:mt-8 lg:mb-0 rounded-lg">
                     {/*Images Cube slider*/}
+
                     <SwiperCubeSlides />
                   </div>
                 </div>
