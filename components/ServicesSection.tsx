@@ -9,7 +9,15 @@ import {
   FaShieldAlt,
   FaWalking,
   FaHeartbeat,
+  FaRunning,
 } from "react-icons/fa";
+import { BiSolidBookReader } from "react-icons/bi";
+import { LiaBrushSolid } from "react-icons/lia";
+import { SlEmotsmile } from "react-icons/sl";
+import { PiTranslateFill } from "react-icons/pi";
+
+import { FaPeoplePulling } from "react-icons/fa6";
+
 import SwiperCubeSlides from "./SwiperCubeSlides/SwiperCubeSlides";
 
 const ServicesSection = () => {
@@ -39,7 +47,7 @@ const ServicesSection = () => {
     <div className="bg-gray-50 min-h-screen py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-medium text-gray-800 mb-4">
             {/* Our Services */}
             {t("services.title")}
           </h1>
@@ -74,7 +82,7 @@ const ServicesSection = () => {
           {activeTab === "daily" && (
             <div className="animate-fadeIn">
               <div className="bg-white ">
-                <h2 className="text-2xl font-bold text-blue-600 mb-6">
+                <h2 className="text-2xl font-medium text-blue-600 mb-6">
                   {/* Daily Program */}
                   {t("services.daily.title")}
                 </h2>
@@ -243,7 +251,7 @@ const ServicesSection = () => {
                         {/* At least 60 minutes of active play daily for
                         preschoolers, with a variety of indoor and outdoor
                         activities. */}
-                         {t("services.daily.physicalText")}
+                        {t("services.daily.physicalText")}
                       </p>
                     </div>
                   </div>
@@ -259,44 +267,64 @@ const ServicesSection = () => {
 
           {activeTab === "development" && (
             <div className="animate-fadeIn">
-              <h2 className="text-2xl font-bold text-blue-600 mb-6">
-                Child Development
+              <h2 className="text-2xl font-medium text-blue-600 mb-6">
+                {/* Child Development */}
+                {t("services.development.title")}
               </h2>
               <p className="text-gray-600 mb-8">
-                Our child-centered approach supports the five developmental
-                domains to ensure holistic growth for every child.
+                {t("services.development.description")}
+                {/* Our child-centered approach supports the five developmental
+                domains to ensure holistic growth for every child. */}
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <DevelopmentCard
-                  title="Social Development"
-                  description="Building relationships, learning to share, developing empathy, and working cooperatively with others."
+                  title={t("services.development.cards.social.title")}
+                  description={t(
+                    "services.development.cards.social.description"
+                  )}
                   color="bg-blue-100"
+                  icon={<FaPeoplePulling className="text-blue-500" />}
                 />
                 <DevelopmentCard
-                  title="Physical Development"
-                  description="Developing both fine and gross motor skills through active play and age-appropriate activities."
+                  title={t("services.development.cards.physical.title")}
+                  description={t(
+                    "services.development.cards.physical.description"
+                  )}
                   color="bg-green-100"
+                  icon={<FaRunning className="text-green-500" />}
                 />
                 <DevelopmentCard
-                  title="Intellectual Development"
-                  description="Stimulating curiosity, problem-solving abilities, and foundational knowledge across various subjects."
-                  color="bg-purple-100"
+                  title={t("services.development.cards.intellectual.title")}
+                  description={t(
+                    "services.development.cards.intellectual.description"
+                  )}
+                  color="bg-purple-200"
+                  icon={<BiSolidBookReader className="text-purple-500" />}
                 />
                 <DevelopmentCard
-                  title="Creative Development"
-                  description="Encouraging imagination, self-expression, and artistic exploration through various mediums."
+                  title={t("services.development.cards.creative.title")}
+                  description={t(
+                    "services.development.cards.creative.description"
+                  )}
                   color="bg-yellow-100"
+                  icon={<LiaBrushSolid className="text-yellow-500" />}
                 />
                 <DevelopmentCard
-                  title="Emotional Development"
-                  description="Learning to identify and express feelings appropriately, build self-confidence, and develop resilience."
+                  title={t("services.development.cards.emotional.title")}
+                  description={t(
+                    "services.development.cards.emotional.description"
+                  )}
                   color="bg-red-100"
+                  icon={<SlEmotsmile className="text-red-500" />}
                 />
                 <DevelopmentCard
-                  title="Bilingual Environment"
-                  description="Exposure to Spanish language through stories, songs, and daily interactions to promote language development."
+                  title={t("services.development.cards.bilingual.title")}
+                  description={t(
+                    "services.development.cards.bilingual.description"
+                  )}
                   color="bg-indigo-100"
+                  icon={<PiTranslateFill className="text-indigo-500" />}
                 />
               </div>
             </div>
@@ -487,16 +515,20 @@ interface DevelopmentCardProps {
   title: string;
   description: string;
   color: string;
+  icon: React.ReactNode;
 }
 
 const DevelopmentCard = ({
   title,
   description,
   color,
+  icon,
 }: DevelopmentCardProps) => {
   return (
     <div className={`${color} p-6 rounded-lg shadow-md`}>
-      <h3 className="text-lg font-semibold mb-2 text-gray-800">{title}</h3>
+      <span className="inline absolute mt-1 text-xl">{icon}</span>
+      <h3 className="text-lg ml-7 font-medium mb-2 text-gray-800">{title}</h3>
+
       <p className="text-gray-600">{description}</p>
     </div>
   );

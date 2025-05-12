@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+--font
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -77,7 +79,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-display;
+
   }
 }
 

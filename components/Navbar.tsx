@@ -196,6 +196,7 @@ const Navbar = () => {
                       onClick={() => {
                         handleLanguageChange("en");
                         setIsLangMenuOpen(false);
+                        setIsOpen(false)
                       }}
                     >
                       
@@ -208,6 +209,7 @@ const Navbar = () => {
                       onClick={() => {
                         handleLanguageChange("es");
                         setIsLangMenuOpen(false);
+                        setIsOpen(false)
                       }}
                     >
                       <span className="fi fi-mx w-5 h-5 rounded-sm"></span>

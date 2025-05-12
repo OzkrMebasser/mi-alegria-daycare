@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHome, FaChild, FaHeart, FaBiking } from "react-icons/fa";
+
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -33,17 +34,17 @@ const HomeSection = () => {
   )}&body=${encodeURIComponent(emailBody)}`;
 
   return (
-    <div className="bg-blue-50 min-h-screen">
+    <div className=" min-h-screen">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-400 to-purple-500 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-4xl md:text-5xl font-medium mb-4">
                 {t("homeSection.hero.title")}
               </h1>
               <p className="text-xl mb-6">{t("homeSection.hero.subtitle")}</p>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
+              <button className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-full shadow-lg">
                 <Link
                   href={whatsappUrl}
                   target="_blank"
@@ -67,31 +68,31 @@ const HomeSection = () => {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+      <div className="container mx-auto px-4 py-16 ">
+        <h2 className="text-3xl text-center mb-12 text-gray-800">
           {t("homeSection.features.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
-            icon={<FaHome className="text-blue-900" />}
+            icon={<FaHome className="text-blue-500" />}
             title={t("homeSection.features.safe.title")}
             description={t("homeSection.features.safe.description")}
             bgColor="bg-blue-100"
           />
           <FeatureCard
-            icon={<FaChild className="text-purple-900" />}
+            icon={<FaChild className="text-purple-500" />}
             title={t("homeSection.features.learning.title")}
             description={t("homeSection.features.learning.description")}
             bgColor="bg-purple-100"
           />
           <FeatureCard
-            icon={<FaHeart className="text-red-900" />}
+            icon={<FaHeart className="text-red-500" />}
             title={t("homeSection.features.caring.title")}
             description={t("homeSection.features.caring.description")}
             bgColor="bg-red-100"
           />
           <FeatureCard
-            icon={<FaBiking className="text-yellow-900" />}
+            icon={<FaBiking className="text-yellow-500" />}
             title={t("homeSection.features.active.title")}
             description={t("homeSection.features.active.description")}
             bgColor="bg-yellow-100"
@@ -102,7 +103,7 @@ const HomeSection = () => {
       {/* Mission Statement */}
       <div className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-medium mb-6">
             {t("homeSection.mission.title")}
           </h2>
           <p className="text-xl max-w-3xl mx-auto">
@@ -113,19 +114,19 @@ const HomeSection = () => {
 
       {/* Call to Action */}
       <div className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">
+        <h2 className="text-3xl font-medium mb-4 text-gray-800">
           {t("homeSection.callToAction.title")}
         </h2>
         <p className="text-xl mb-8 text-gray-600">
           {t("homeSection.callToAction.subtitle")}
         </p>
         <div className="flex justify-center space-x-4">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-full shadow-lg">
             <Link href={mailtoLink} target="_blank" rel="noopener noreferrer">
               {t("homeSection.callToAction.contactButton")}
             </Link>
           </button>
-          <button className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg">
+          <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-full shadow-lg">
             <Link href="/about">
               {t("homeSection.callToAction.learnMoreButton")}
             </Link>
@@ -153,7 +154,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div className={`${bgColor}  p-6 rounded-lg shadow-lg text-center`}>
       <div className={`text-4xl mb-4 flex justify-center `}>{icon}</div>
-      <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
+      <h3 className="text-xl font-medium mb-2 text-gray-800">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   );

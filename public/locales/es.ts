@@ -88,39 +88,44 @@ export const es = {
       outdoorTitle: "Actividades al Aire Libre",
       outdoorText:
         "Visitas diarias al parque y participación en grupos de juego locales para fomentar la socialización y la actividad física.",
-        physicalTitle: "Desarrollo físico",
-        physicalText: "Al menos 60 minutos de juego activo diario para niños en edad preescolar, con una variedad de actividades en interiores y al aire libre."
-        
+      physicalTitle: "Desarrollo físico",
+      physicalText:
+        "Al menos 60 minutos de juego activo diario para niños en edad preescolar, con una variedad de actividades en interiores y al aire libre.",
     },
     development: {
       title: "Desarrollo Infantil",
       description:
-        "Nuestro enfoque centrado en el niño apoya los cinco ámbitos del desarrollo, ayudando a cada niño a crecer y aprender a su propio ritmo.",
+        "Nuestro enfoque centrado en los niños promueve el desarrollo en cinco áreas esenciales, garantizando un crecimiento integral para cada niño.",
       cards: {
         social: {
           title: "Desarrollo Social",
           description:
-            "Fomentar relaciones, aprender a compartir, desarrollar empatía y trabajar en cooperación con otros.",
-        },
-        emotional: {
-          title: "Desarrollo Emocional",
-          description:
-            "Ayudar a los niños a reconocer, comprender y expresar sus emociones de forma saludable.",
-        },
-        cognitive: {
-          title: "Desarrollo Cognitivo",
-          description:
-            "Fomentar la curiosidad, la resolución de problemas y el desarrollo de habilidades tempranas en lectura y matemáticas.",
-        },
-        language: {
-          title: "Desarrollo del Lenguaje",
-          description:
-            "Fomentar la comunicación mediante el habla, la escucha y la narración de cuentos en español e inglés.",
+            "Formar relaciones, aprender a compartir, desarrollar empatía y trabajar en cooperación con otros.",
         },
         physical: {
           title: "Desarrollo Físico",
           description:
-            "Promover habilidades motoras a través del juego activo, tanto en interiores como en exteriores.",
+            "Desarrollar habilidades motoras finas y gruesas mediante el juego activo y actividades apropiadas para la edad.",
+        },
+        intellectual: {
+          title: "Desarrollo Intelectual",
+          description:
+            "Estimular la curiosidad, la capacidad de resolver problemas y el conocimiento básico en diversas materias.",
+        },
+        creative: {
+          title: "Desarrollo Creativo",
+          description:
+            "Fomentar la imaginación, la autoexpresión y la exploración artística a través de distintos medios.",
+        },
+        emotional: {
+          title: "Desarrollo Emocional",
+          description:
+            "Aprender a identificar y expresar las emociones adecuadamente, fortalecer la autoestima y desarrollar resiliencia.",
+        },
+        bilingual: {
+          title: "Entorno Bilingüe",
+          description:
+            "Exposición al idioma español mediante cuentos, canciones e interacciones diarias para fomentar el desarrollo del lenguaje.",
         },
       },
     },

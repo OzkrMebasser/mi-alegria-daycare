@@ -10,10 +10,10 @@ import "leaflet/dist/leaflet.css";
 
 
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+// });
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fredoka.variable}`}>
+    <html lang="en" className={`${fredoka.variable}`}>
       <body className="min-h-screen flex flex-col font-display ">
         <I18nProvider>
           <NavbarLayout />

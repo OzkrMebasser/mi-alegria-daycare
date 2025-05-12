@@ -37,8 +37,8 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        display: ['var(--font-fredoka)'],
+        sans: [ 'Poppins', 'Segoe UI', 'sans-serif'],
+        display: ['var(--font-fredoka)', 'Poppins', 'Segoe UI', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

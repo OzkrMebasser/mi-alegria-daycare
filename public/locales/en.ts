@@ -68,7 +68,8 @@ export const en = {
       scheduleTitle: "Daily Schedule (approximate)",
       schedule: {
         activity1: "Arrival/greeting children - Free play",
-        activity2: "Crafts/Drawing Activities - Clean up, toilet routine and handwashing",
+        activity2:
+          "Crafts/Drawing Activities - Clean up, toilet routine and handwashing",
         activity3: "Leave to playgroup or park - Clean up and handwashing",
         activity4: "Playgroup",
         activity5: "Outdoor play",
@@ -78,43 +79,49 @@ export const en = {
         activity9: "Outdoor play/Free time - Clean up and toilet routine",
         snackTime: "Snack time",
         lunchTime: "Lunch time - Clean up and handwashing",
-        goingHome: "Going Home"
+        goingHome: "Going Home",
       },
       outdoorTitle: "Outdoor Activities",
       outdoorText:
         "Daily visits to the park and participation in local playgroups for socialization and physical activity.",
       physicalTitle: "Physical Development",
-      physicalText: "At least 60 minutes of active play daily for preschoolers, with a variety of indoor and outdoor activities.",
+      physicalText:
+        "At least 60 minutes of active play daily for preschoolers, with a variety of indoor and outdoor activities.",
     },
     development: {
       title: "Child Development",
       description:
-        "Our child-centered approach supports the five developmental domains, helping each child grow and learn at their own pace.",
+        "Our child-centered approach fosters growth across five essential developmental domains, ensuring each child’s well-rounded development.",
       cards: {
         social: {
           title: "Social Development",
           description:
             "Building relationships, learning to share, developing empathy, and working cooperatively with others.",
         },
-        emotional: {
-          title: "Emotional Development",
-          description:
-            "Helping children recognize, understand, and express their emotions in healthy ways.",
-        },
-        cognitive: {
-          title: "Cognitive Development",
-          description:
-            "Encouraging curiosity, problem-solving, and the development of early literacy and math skills.",
-        },
-        language: {
-          title: "Language Development",
-          description:
-            "Fostering communication through speaking, listening, and storytelling in both Spanish and English.",
-        },
         physical: {
           title: "Physical Development",
           description:
-            "Promoting motor skills through active play, both indoors and outdoors.",
+            "Developing both fine and gross motor skills through active play and age-appropriate activities.",
+        },
+        intellectual: {
+          title: "Intellectual Development",
+          description:
+            "Stimulating curiosity, problem-solving abilities, and foundational knowledge across various subjects.",
+        },
+        creative: {
+          title: "Creative Development",
+          description:
+            "Encouraging imagination, self-expression, and artistic exploration through various mediums.",
+        },
+        emotional: {
+          title: "Emotional Development",
+          description:
+            "Learning to identify and express feelings appropriately, build self-confidence, and develop resilience.",
+        },
+        bilingual: {
+          title: "Bilingual Environment",
+          description:
+            "Exposure to Spanish language through stories, songs, and daily interactions to promote language development.",
         },
       },
     },
