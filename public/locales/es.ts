@@ -131,29 +131,85 @@ export const es = {
     },
     nutrition: {
       title: "Nutrición",
-      description:
-        "Ofrecemos comidas y meriendas saludables y equilibradas para apoyar el crecimiento físico y las necesidades energéticas de tu hijo.",
-      habitsTitle: "Hábitos de Alimentación Saludables",
+
+      habitsTitle: "Hábitos de alimentación saludable",
       habitsText:
-        "Fomentamos que los niños prueben nuevos alimentos y desarrollen rutinas positivas durante las comidas.",
-      scheduleTitle: "Horario de Comidas",
-      schedule: [
-        { name: "Merienda Matutina", time: "8:30 AM" },
-        { name: "Almuerzo", time: "11:30 AM" },
-        { name: "Merienda de la Tarde", time: "2:00 PM" },
-      ],
+        "Siguiendo la Guía Alimentaria de Canadá, promovemos hábitos alimenticios saludables mediante comidas y refrigerios nutritivos.",
+
+      scheduleTitle: "Horario de comidas",
+      schedule: {
+        morningSnack: "Refrigerio matutino",
+        lunch: "Hora del almuerzo",
+      },
+
+      healthySnacks: {
+        title: "Refrigerios saludables:",
+        reccomended: "(Recomendado)",
+        description:
+          "Barras de granola, vasitos de fruta sin azúcar, frutas de temporada, yogur, requesón, queso, galletas integrales, pan integral tostado, bastones de verduras y más.",
+      },
+      nutritionApproach: {
+        title: "Nuestro Enfoque Nutricional",
+        points: {
+          one: "Respetamos la autonomía de tu hijo al decidir si comer, qué comer de lo que se ofrece y cuánto comer.",
+          two: "Nunca obligamos a los niños a comer, ni los amenazamos, ni utilizamos la comida como premio o castigo.",
+          three:
+            "Seguimos procedimientos adecuados de almacenamiento y manipulación de alimentos para garantizar la seguridad alimentaria.",
+          four: "Practicamos y enseñamos el lavado de manos adecuado antes de comer para minimizar la propagación de gérmenes.",
+          five: "Atendemos necesidades dietéticas especiales y alergias con la documentación correspondiente.",
+        },
+      },
     },
+
     safety: {
-      title: "Seguridad y Bienestar",
-      description:
-        "La seguridad y el bienestar de tu hijo son nuestras principales prioridades. Mantenemos un entorno seguro y seguimos estrictos protocolos de salud.",
-      items: [
-        "Instalaciones seguras con protección infantil y monitoreo",
-        "Controles de salud diarios y protocolos de limpieza",
-        "Personal certificado en RCP y primeros auxilios",
-        "Comunicación abierta con los padres ante cualquier inquietud",
-      ],
-    },
+      tabTitle: "Seguridad y Bienestar",
+      healthSafety: {
+        title: "Protocolos de Salud y Seguridad",
+        description:
+          "La seguridad de tu hijo es nuestra máxima prioridad. Mantenemos estrictos protocolos de salud y seguridad para garantizar un entorno seguro.",
+        items: {
+          healthHygiene: {
+            title: "Salud e Higiene",
+            description:
+              "Lavado frecuente de manos, desinfección de juguetes y superficies, y enseñanza de hábitos de higiene adecuados para minimizar la propagación de enfermedades.",
+          },
+          emergencyPreparedness: {
+            title: "Preparación para Emergencias",
+            description:
+              "Simulacros de incendios mensuales, procedimientos para terremotos y planes de emergencia completos para diversos escenarios.",
+          },
+          safeEnvironment: {
+            title: "Entorno Seguro",
+            description:
+              "Áreas protegidas para niños, juguetes y equipos apropiados para su edad, y supervisión continua en todo momento.",
+          },
+          illnessPolicy: {
+            title: "Política de Enfermedades",
+            description:
+              "Directrices claras sobre cuándo los niños deben quedarse en casa debido a enfermedades para proteger a todos los niños a nuestro cuidado.",
+          },
+        },
+      },
+      guidance: {
+        title: "Enfoque de Orientación Infantil",
+        description:
+          "Nuestra política de orientación ayuda a los niños a desarrollar autodisciplina, autoconfianza y respeto por los demás.",
+        basicLimits: {
+          title: "Nuestros Límites Básicos:",
+          rules: {
+            one: "¡Sé Seguro!",
+            two: "¡Sé Amable!",
+            three: "¡Diviértete!",
+          },
+        },
+        goals: {
+          title: "Objetivos de Orientación:",
+          description:
+            "Guiamos a los niños para que expresen sus emociones de manera segura, respeten los sentimientos e ideas de los demás, resuelvan conflictos positivamente y desarrollen autoconfianza a través del dominio de habilidades.",
+        },
+      },
+    }
+    
   },
 
   about: {

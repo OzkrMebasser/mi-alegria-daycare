@@ -127,29 +127,81 @@ export const en = {
     },
     nutrition: {
       title: "Nutrition",
-      description:
-        "We provide healthy, balanced meals and snacks to support your child's physical growth and energy needs.",
+
       habitsTitle: "Healthy Eating Habits",
       habitsText:
-        "We encourage children to try new foods and develop positive mealtime routines.",
+        "Following Canada's Food Guide, we promote healthy eating habits through nutritious meals and snacks.",
       scheduleTitle: "Meal Schedule",
-      schedule: [
-        { name: "Morning Snack", time: "8:30 AM" },
-        { name: "Lunch", time: "11:30 AM" },
-        { name: "Afternoon Snack", time: "2:00 PM" },
-      ],
+      schedule: {
+        morningSnack: "Morning Snack",
+        lunch: "Lunch time",
+      },
+      healthySnacks:{
+        title: "Healthy Snacks:",
+        reccomended: "(Recommended)",
+        description: "Granola bars, unsweetened fruit cups, seasonal fruits, yogurt, cottage cheese, regular cheese, whole grain crackers, whole grain toast, veggie sticks, and more."
+      },
+      nutritionApproach: {
+        title: "Our Nutrition Approach",
+        points: {
+          one: "We respect your child's autonomy in deciding whether to eat, what to eat from what is offered, and how much to eat.",
+          two: "We never force children to eat, threaten them, or use food as a reward or punishment.",
+          three: "We follow proper food storage and handling procedures to ensure food safety.",
+          four: "We practice and teach proper hand washing before eating to minimize the spread of germs.",
+          five: "We accommodate special dietary needs and allergies with appropriate documentation."
+        }
+      }
+      
     },
     safety: {
-      title: "Safety & Wellbeing",
-      description:
-        "Your child's safety and wellbeing are our top priorities. We maintain a secure environment and follow strict health protocols.",
-      items: [
-        "Secure facility with childproofing and monitoring",
-        "Daily health checks and cleanliness protocols",
-        "CPR and First Aid certified staff",
-        "Open communication with parents about any concerns",
-      ],
-    },
+      tabTitle: "Safety & Wellbeing",
+      healthSafety: {
+        title: "Health & Safety Protocols",
+        description:
+          "Your child's safety is our top priority. We maintain strict health and safety protocols to ensure a secure environment.",
+        items: {
+          healthHygiene: {
+            title: "Health & Hygiene",
+            description:
+              "Regular handwashing, sanitizing toys and surfaces, and teaching proper hygiene habits to minimize spread of illness.",
+          },
+          emergencyPreparedness: {
+            title: "Emergency Preparedness",
+            description:
+              "Monthly fire drills, earthquake procedures, and comprehensive emergency plans for various scenarios.",
+          },
+          safeEnvironment: {
+            title: "Safe Environment",
+            description:
+              "Childproofed areas, age-appropriate toys and equipment, and continuous supervision at all times.",
+          },
+          illnessPolicy: {
+            title: "Illness Policy",
+            description:
+              "Clear guidelines for when children should stay home due to illness to protect all children in our care.",
+          },
+        },
+      },
+      guidance: {
+        title: "Child Guidance Approach",
+        description:
+          "Our guidance policy helps children develop self-discipline, self-confidence, and respect for others.",
+        basicLimits: {
+          title: "Our Basic Limits:",
+          rules: {
+            one: "Be Safe",
+            two: "Be Kind",
+            three: "Have Fun!",
+          },
+        },
+        goals: {
+          title: "Guidance Goals:",
+          description:
+            "We guide children to express emotions safely, show respect for others' feelings and ideas, solve conflicts positively, and build self-confidence through mastery of skills.",
+        },
+      },
+    }
+    
   },
   about: {
     title: "About Mi Alegría",

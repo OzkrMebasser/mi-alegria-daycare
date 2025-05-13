@@ -15,6 +15,8 @@ import { BiSolidBookReader } from "react-icons/bi";
 import { LiaBrushSolid } from "react-icons/lia";
 import { SlEmotsmile } from "react-icons/sl";
 import { PiTranslateFill } from "react-icons/pi";
+import { SiGreasyfork } from "react-icons/si";
+import { GiForkKnifeSpoon } from "react-icons/gi";
 
 import { FaPeoplePulling } from "react-icons/fa6";
 
@@ -97,7 +99,7 @@ const ServicesSection = () => {
               </h2> */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                  <h3 className="text-xl font-medium mb-4 text-gray-800">
                     {/* Our Structured Schedule */}
                     {t("services.daily.subTitle")}
                   </h3>
@@ -108,7 +110,7 @@ const ServicesSection = () => {
                     {t("services.daily.subDescription")}
                   </p>
                   <div className="bg-blue-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-lg mb-2 text-gray-800">
+                    <h4 className="font-medium text-lg mb-2 text-gray-800">
                       {/* Daily Schedule: */}
                       {t("services.daily.scheduleTitle")}
                     </h4>
@@ -229,7 +231,7 @@ const ServicesSection = () => {
                   <div className="flex items-center">
                     <FaWalking className="text-7xl lg:text-4xl text-green-500 mr-4" />
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-800">
+                      <h3 className="text-xl font-medium text-gray-800">
                         {/* Outdoor Activities */}
                         {t("services.daily.outdoorTitle")}
                       </h3>
@@ -243,7 +245,7 @@ const ServicesSection = () => {
                   <div className="flex items-center mt-6 mb-8 lg:mb-0">
                     <FaHeartbeat className="text-8xl lg:text-5xl text-red-500 mr-3" />
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-800">
+                      <h3 className="text-xl font-medium text-gray-800">
                         {/* Physical Development */}
                         {t("services.daily.physicalTitle")}
                       </h3>
@@ -332,49 +334,69 @@ const ServicesSection = () => {
 
           {activeTab === "nutrition" && (
             <div className="animate-fadeIn">
-              <h2 className="text-2xl font-bold text-blue-600 mb-6">
-                Nutrition
+              <h2 className="text-2xl font-medium text-blue-600 mb-6">
+                {/* Nutrition */}
+                {t("services.nutrition.title")}
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                    Healthy Eating Habits
+                  <h3 className="text-xl font-medium mb-4 text-gray-800">
+                    {/* Healthy Eating Habits */}
+                    {t("services.nutrition.habitsTitle")}
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Following Canada&#39;s Food Guide, we promote healthy eating
-                    habits through nutritious meals and snacks.
+                    {/* Following Canada&#39;s Food Guide, we promote healthy eating
+                    habits through nutritious meals and snacks. */}
+                    {t("services.nutrition.habitsText")}
                   </p>
-                  <div className="bg-green-50 p-4 rounded-lg mb-6">
-                    <h4 className="font-semibold text-lg mb-2 text-gray-800">
-                      Meal Schedule:
+                  <div className="bg-green-100 p-4 rounded-lg mb-6">
+                    <h4 className="font-medium text-lg mb-2 text-gray-800">
+                      <GiForkKnifeSpoon className=" text-xl inline mr-2 text-green-500" />
+                      {/* Meal Schedule: */}
+                      {t("services.nutrition.scheduleTitle")}
                     </h4>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-center">
                         <span className="font-medium">10:00-10:15</span>
                         <span className="mx-2">—</span>
-                        <span>Morning snack</span>
+                        <span>
+                          {/* Morning snack */}
+                          {t("services.nutrition.schedule.morningSnack")}
+                        </span>
                       </li>
                       <li className="flex items-center">
                         <span className="font-medium">12:00-12:30</span>
                         <span className="mx-2">—</span>
-                        <span>Lunch time</span>
+                        <span>
+                          {/* Lunch time */}
+                          {t("services.nutrition.schedule.lunch")}
+                        </span>
                       </li>
                     </ul>
                   </div>
-                  <div className="bg-yellow-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-lg mb-2 text-gray-800">
-                      Recommended Healthy Snacks:
+                  <div className="bg-red-100 p-4 rounded-lg">
+                    <h4 className="font-medium text-lg mb-2 text-gray-800">
+                      <FaAppleAlt className=" text-xl inline mr-2 text-red-500" />
+                      {/* Healthy Snacks:  */}
+                      {t("services.nutrition.healthySnacks.title")}
+                      <br />
+                      <span className="ml-7">
+                        {/* (Recomended) */}
+                        {t("services.nutrition.healthySnacks.reccomended")}
+                      </span>
                     </h4>
                     <p className="text-gray-600">
-                      Granola bars, unsweetened fruit cups, seasonal fruits,
+                      {/* Granola bars, unsweetened fruit cups, seasonal fruits,
                       yogurt, cottage cheese, regular cheese, whole grain
-                      crackers, whole grain toast, veggie sticks, and more.
+                      crackers, whole grain toast, veggie sticks, and more. */}
+                      {t("services.nutrition.healthySnacks.description")}
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                    Our Nutrition Approach
+                  <h3 className="text-xl font-medium mb-4 text-gray-800">
+                    {/* Our Nutrition Approach */}
+                    {t("services.nutrition.nutritionApproach.title")}
                   </h3>
                   <ul className="space-y-4 text-gray-600">
                     <li className="flex items-start">
@@ -382,9 +404,10 @@ const ServicesSection = () => {
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p>
-                        We respect your child&#39;s autonomy in deciding whether
+                        {/* We respect your child&#39;s autonomy in deciding whether
                         to eat, what to eat from what is offered, and how much
-                        to eat.
+                        to eat. */}
+                        {t("services.nutrition.nutritionApproach.points.one")}
                       </p>
                     </li>
                     <li className="flex items-start">
@@ -392,8 +415,9 @@ const ServicesSection = () => {
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p>
-                        We never force children to eat, threaten them, or use
-                        food as a reward or punishment.
+                        {/* We never force children to eat, threaten them, or use
+                        food as a reward or punishment. */}
+                        {t("services.nutrition.nutritionApproach.points.two")}
                       </p>
                     </li>
                     <li className="flex items-start">
@@ -401,8 +425,9 @@ const ServicesSection = () => {
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p>
-                        We follow proper food storage and handling procedures to
-                        ensure food safety.
+                        {/* We follow proper food storage and handling procedures to
+                        ensure food safety. */}
+                        {t("services.nutrition.nutritionApproach.points.three")}
                       </p>
                     </li>
                     <li className="flex items-start">
@@ -410,8 +435,9 @@ const ServicesSection = () => {
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p>
-                        We practice and teach proper hand washing before eating
-                        to minimize the spread of germs.
+                        {/* We practice and teach proper hand washing before eating
+                        to minimize the spread of germs. */}
+                        {t("services.nutrition.nutritionApproach.points.four")}
                       </p>
                     </li>
                     <li className="flex items-start">
@@ -419,8 +445,9 @@ const ServicesSection = () => {
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p>
-                        We accommodate special dietary needs and allergies with
-                        appropriate documentation.
+                        {/* We accommodate special dietary needs and allergies with
+                        appropriate documentation. */}
+                        {t("services.nutrition.nutritionApproach.points.five")}
                       </p>
                     </li>
                   </ul>
@@ -431,35 +458,62 @@ const ServicesSection = () => {
 
           {activeTab === "safety" && (
             <div className="animate-fadeIn">
-              <h2 className="text-2xl font-bold text-blue-600 mb-6">
-                Safety & Wellbeing
+              <h2 className="text-2xl font-medium text-blue-600 mb-6">
+                {/* Safety & Wellbeing */}
+                {t("services.safety.tabTitle")}
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                    Health & Safety Protocols
+                  <h3 className="text-xl font-medium mb-4 text-gray-800">
+                    {/* Health & Safety Protocols */}
+                    {t("services.safety.healthSafety.title")}
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Your child&#39;s safety is our top priority. We maintain
+                    {/* Your child&#39;s safety is our top priority. We maintain
                     strict health and safety protocols to ensure a secure
-                    environment.
+                    environment. */}
+                    {t("services.safety.healthSafety.description")}
                   </p>
                   <div className="space-y-4">
                     <SafetyItem
-                      title="Health & Hygiene"
-                      description="Regular handwashing, sanitizing toys and surfaces, and teaching proper hygiene habits to minimize spread of illness."
+                      title={t(
+                        "services.safety.healthSafety.items.healthHygiene.title"
+                      )}
+                      description={t(
+                        "services.safety.healthSafety.items.healthHygiene.description"
+                      )}
+                      // title="Health & Hygiene"
+                      // description="Regular handwashing, sanitizing toys and surfaces, and teaching proper hygiene habits to minimize spread of illness."
                     />
                     <SafetyItem
-                      title="Emergency Preparedness"
-                      description="Monthly fire drills, earthquake procedures, and comprehensive emergency plans for various scenarios."
+                      title={t(
+                        "services.safety.healthSafety.items.emergencyPreparedness.title"
+                      )}
+                      description={t(
+                        "services.safety.healthSafety.items.emergencyPreparedness.description"
+                      )}
+                      // title="Emergency Preparedness"
+                      // description="Monthly fire drills, earthquake procedures, and comprehensive emergency plans for various scenarios."
                     />
                     <SafetyItem
-                      title="Safe Environment"
-                      description="Childproofed areas, age-appropriate toys and equipment, and continuous supervision at all times."
+                      title={t(
+                        "services.safety.healthSafety.items.safeEnvironment.title"
+                      )}
+                      description={t(
+                        "services.safety.healthSafety.items.safeEnvironment.description"
+                      )}
+                      // title="Safe Environment"
+                      // description="Childproofed areas, age-appropriate toys and equipment, and continuous supervision at all times."
                     />
                     <SafetyItem
-                      title="Illness Policy"
-                      description="Clear guidelines for when children should stay home due to illness to protect all children in our care."
+                     title={t(
+                      "services.safety.healthSafety.items.illnessPolicy.title"
+                    )}
+                    description={t(
+                      "services.safety.healthSafety.items.illnessPolicy.description"
+                    )}
+                      // title="Illness Policy"
+                      // description="Clear guidelines for when children should stay home due to illness to protect all children in our care."
                     />
                   </div>
                 </div>
