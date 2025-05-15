@@ -24,7 +24,11 @@ export const metadata: Metadata = {
   title: "Mi Alegría Daycare - Where Joy and Learning Come Together",
   description:
     "A nurturing daycare center providing bilingual education and care for children in Victoria B.C.",
-};
+    icons: {
+    icon: "/favicon.ico",
+  },
+
+  };
 
 export default function RootLayout({
   children,
