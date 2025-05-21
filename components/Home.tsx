@@ -5,6 +5,7 @@ import { FaShieldAlt, FaGraduationCap, FaLanguage } from "react-icons/fa";
 import SimpleMap from "@/components/SImpleMap";
 import HeroImgSlider from "@/components/HeroImgSlider";
 import HomeSection from "./HomeSection";
+import StatsCounter from "./StatsCounter";
 import Image from "next/image";
 
 const images = [
@@ -73,6 +74,9 @@ export default function Home() {
           
           {/* Home Section */}
         <HomeSection/>
+        {/*Stats counter*/}
+
+        <StatsCounter />
 
         {/* Map Section */}
 
