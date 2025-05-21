@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const StatsCounter = () => {
-  // Valores finales a los que queremos llegar
   const targetValues = {
     kids: 120,
     years: 10,
@@ -9,7 +8,6 @@ const StatsCounter = () => {
     satisfaction: 98,
   };
 
-  // Estado para los valores actuales que se mostrarán
   const [currentValues, setCurrentValues] = useState({
     kids: 0,
     years: 0,
@@ -17,24 +15,45 @@ const StatsCounter = () => {
     satisfaction: 0,
   });
 
-  // Duración de la animación en milisegundos (10 segundos para una animación muy lenta)
-  const animationDuration = 10000;
-  // Intervalo de actualización
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef(null);
+
+  const animationDuration = 3000; // Puedes ajustar esto
   const updateInterval = 30;
-  // Número total de pasos para la animación
   const steps = animationDuration / updateInterval;
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          animateCounters();
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.3 } // Cuando el 30% del componente esté visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  const animateCounters = () => {
     let step = 0;
     const timer = setInterval(() => {
       step++;
       if (step > steps) {
         clearInterval(timer);
-        setCurrentValues({ ...targetValues }); // Aseguramos que los valores finales sean exactos
+        setCurrentValues({ ...targetValues });
         return;
       }
 
-      // Calculamos los valores actuales basados en el progreso de la animación
       setCurrentValues({
         kids: Math.floor((targetValues.kids / steps) * step),
         years: Math.floor((targetValues.years / steps) * step),
@@ -42,37 +61,27 @@ const StatsCounter = () => {
         satisfaction: Math.floor((targetValues.satisfaction / steps) * step),
       });
     }, updateInterval);
-
-    return () => clearInterval(timer);
-  }, []);
+  };
 
   return (
-    <div className="flex flex-col">
+    <div ref={ref} className="flex flex-col">
       <div className="flex w-full border-b">
-        {/* Niños cuidados */}
         <div className="w-1/2 p-8 text-center border-r">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">
-            {" "}
-            Niños atendidos{" "}
-          </h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">Niños atendidos</h4>
           <div className="text-5xl font-bold text-teal-500">
             {currentValues.kids.toLocaleString()}+
           </div>
-          <div className="mt-2 text-sm  text-gray-600">
+          <div className="mt-2 text-sm text-gray-600">
             Hemos cuidado de más de 120 niños felices.
           </div>
         </div>
 
-        {/* Años de servicio*/}
         <div className="w-1/2 p-8 text-center">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">
-            {" "}
-            Años de servicio{" "}
-          </h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">Años de servicio</h4>
           <div className="text-5xl font-bold text-red-500">
             {currentValues.years.toLocaleString()}+
           </div>
-          <div className="mt-2 text-sm  text-gray-600">
+          <div className="mt-2 text-sm text-gray-600">
             Brindando cuidado de calidad por más de 10 años
           </div>
         </div>
@@ -80,29 +89,21 @@ const StatsCounter = () => {
 
       <div className="flex w-full">
         <div className="w-1/2 p-8 text-center border-r">
-          {/* Familias impactadas */}
-          <h4 className="mt-2 text-sm uppercase text-gray-600">
-            {" "}
-            Familias impactadas{" "}
-          </h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">Familias impactadas</h4>
           <div className="text-5xl font-bold text-orange-500">
             {currentValues.resources}+
           </div>
-          <div className="mt-2 text-sm  text-gray-600">
+          <div className="mt-2 text-sm text-gray-600">
             Más de 70 familias han confiado en nosotros
           </div>
         </div>
 
-        {/* Índice de satisfacción */}
         <div className="w-1/2 p-8 text-center">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">
-            {" "}
-            Índice de satisfacción{" "}
-          </h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">Índice de satisfacción</h4>
           <div className="text-5xl font-bold text-purple-500">
             {currentValues.satisfaction}%
           </div>
-          <div className="mt-2 text-sm  text-gray-600">
+          <div className="mt-2 text-sm text-gray-600">
             Clientes satisfechos con nuestro servicio de calidad
           </div>
         </div>
