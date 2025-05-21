@@ -1,6 +1,10 @@
+"use client"
+import { useTranslation } from "react-i18next";
+
 import { useState, useEffect, useRef } from "react";
 
 const StatsCounter = () => {
+    const { t } = useTranslation();
   const targetValues = {
     kids: 120,
     years: 10,
@@ -67,44 +71,61 @@ const StatsCounter = () => {
     <div ref={ref} className="flex flex-col">
       <div className="flex w-full border-b">
         <div className="w-1/2 p-8 text-center border-r">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">Niños atendidos</h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">
+            {/* Niños atendidos */}
+            {t("homeSection.stats.kids")}
+          </h4>
           <div className="text-5xl font-bold text-teal-500">
             {currentValues.kids.toLocaleString()}+
           </div>
           <div className="mt-2 text-sm text-gray-600">
-            Hemos cuidado de más de 120 niños felices.
+            {/* Hemos cuidado de más de 120 niños felices. */}
+             {t("homeSection.stats.kidsDescription")}
           </div>
         </div>
 
         <div className="w-1/2 p-8 text-center">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">Años de servicio</h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">
+            {/* Años de servicio */}
+                         {t("homeSection.stats.years")}
+
+          </h4>
           <div className="text-5xl font-bold text-red-500">
             {currentValues.years.toLocaleString()}+
           </div>
           <div className="mt-2 text-sm text-gray-600">
-            Brindando cuidado de calidad por más de 10 años
+            {/* Brindando cuidado de calidad por más de 10 años */}
+            {t("homeSection.stats.yearsDescription")}
           </div>
         </div>
       </div>
 
       <div className="flex w-full">
         <div className="w-1/2 p-8 text-center border-r">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">Familias impactadas</h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">
+            {/* Familias impactadas */}
+            {t("homeSection.stats.resources")}
+          </h4>
           <div className="text-5xl font-bold text-orange-500">
             {currentValues.resources}+
           </div>
           <div className="mt-2 text-sm text-gray-600">
-            Más de 70 familias han confiado en nosotros
+            {/* Más de 70 familias han confiado en nosotros */}
+            {t("homeSection.stats.resourcesDescription")}
           </div>
         </div>
 
         <div className="w-1/2 p-8 text-center">
-          <h4 className="mt-2 text-sm uppercase text-gray-600">Índice de satisfacción</h4>
+          <h4 className="mt-2 text-sm uppercase text-gray-600">
+            {/* Índice de satisfacción */}
+            {t("homeSection.stats.satisfaction")}
+          </h4>
           <div className="text-5xl font-bold text-purple-500">
             {currentValues.satisfaction}%
           </div>
           <div className="mt-2 text-sm text-gray-600">
-            Clientes satisfechos con nuestro servicio de calidad
+            {/* Clientes satisfechos con nuestro servicio de calidad */}
+            {t("homeSection.stats.satisfactionDescription")}
           </div>
         </div>
       </div>

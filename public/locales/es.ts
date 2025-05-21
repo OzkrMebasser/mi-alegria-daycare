@@ -48,6 +48,17 @@ export const es = {
       contactButton: "Contáctanos",
       learnMoreButton: "Saber Más",
     },
+    stats: {
+      kids: "Niños atendidos",
+      kidsDescription: "Hemos cuidado de más de 120 niños felices.",
+      years: "Años de servicio",
+      yearsDescription: "Brindando cuidado de calidad por más de 10 años",
+      resources: "Familias impactadas",
+      resourcesDescription: "Más de 70 familias han confiado en nosotros",
+      satisfaction: "Índice de satisfacción",
+      satisfactionDescription:
+        "Clientes satisfechos con nuestro servicio de calidad",
+    },
   },
   services: {
     title: "Nuestros Servicios",
@@ -208,8 +219,7 @@ export const es = {
             "Guiamos a los niños para que expresen sus emociones de manera segura, respeten los sentimientos e ideas de los demás, resuelvan conflictos positivamente y desarrollen autoconfianza a través del dominio de habilidades.",
         },
       },
-    }
-    
+    },
   },
 
   about: {

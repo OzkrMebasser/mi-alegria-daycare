@@ -46,6 +46,16 @@ export const en = {
       contactButton: "Contact Us",
       learnMoreButton: "Learn More",
     },
+    stats: {
+      kids: "Children cared for",
+      kidsDescription: "We have cared for over 120 happy children.",
+      years: "Years of service",
+      yearsDescription: "Providing quality care for more than 10 years",
+      resources: "Families served",
+      resourcesDescription: "Over 70 families have trusted us",
+      satisfaction: "Satisfaction rate",
+      satisfactionDescription: "Clients satisfied with our quality service",
+    },
   },
 
   services: {
@@ -136,22 +146,23 @@ export const en = {
         morningSnack: "Morning Snack",
         lunch: "Lunch time",
       },
-      healthySnacks:{
+      healthySnacks: {
         title: "Healthy Snacks:",
         reccomended: "(Recommended)",
-        description: "Granola bars, unsweetened fruit cups, seasonal fruits, yogurt, cottage cheese, regular cheese, whole grain crackers, whole grain toast, veggie sticks, and more."
+        description:
+          "Granola bars, unsweetened fruit cups, seasonal fruits, yogurt, cottage cheese, regular cheese, whole grain crackers, whole grain toast, veggie sticks, and more.",
       },
       nutritionApproach: {
         title: "Our Nutrition Approach",
         points: {
           one: "We respect your child's autonomy in deciding whether to eat, what to eat from what is offered, and how much to eat.",
           two: "We never force children to eat, threaten them, or use food as a reward or punishment.",
-          three: "We follow proper food storage and handling procedures to ensure food safety.",
+          three:
+            "We follow proper food storage and handling procedures to ensure food safety.",
           four: "We practice and teach proper hand washing before eating to minimize the spread of germs.",
-          five: "We accommodate special dietary needs and allergies with appropriate documentation."
-        }
-      }
-      
+          five: "We accommodate special dietary needs and allergies with appropriate documentation.",
+        },
+      },
     },
     safety: {
       tabTitle: "Safety & Wellbeing",
@@ -200,8 +211,7 @@ export const en = {
             "We guide children to express emotions safely, show respect for others' feelings and ideas, solve conflicts positively, and build self-confidence through mastery of skills.",
         },
       },
-    }
-    
+    },
   },
   about: {
     title: "About Mi Alegría",
