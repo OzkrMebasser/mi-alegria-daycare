@@ -214,19 +214,49 @@ export const en = {
     },
   },
   about: {
-    title: "About Mi Alegría",
-    mission:
-      "Our mission is to provide a nurturing environment where children can learn, grow, and thrive.",
-    values: {
-      title: "Our Values",
-      items: [
-        "Safety First",
-        "Joy in Learning",
-        "Cultural Awareness",
-        "Community Connection",
-      ],
-    },
+    title: "About Mi Alegria Daycare",
+    description:
+      "A place where children can feel comfortable and safe while parents feel at ease leaving their precious children in our capable care.",
+    owner: "Daycare Owner & Provider",
+    personalStoryTitle: "Our Story",
+    personalStoryParagraphs: [
+      "My name is Priscila Spahn and I am originally from Monterrey, Mexico. I enjoy providing dedicated care to the precious little ones being entrusted to my daycare and thus becoming part of their lives and those of their families.",
+      "My husband - who is originally from Switzerland - and I have three wonderful children who are now young adults and teenagers. They are excited to be part of a multi-ethnic family and enjoy occasionally supporting me by spending time with the daycare kids.",
+      "I speak Spanish at home and believe in learning through play philosophy. We enjoy going to a variety of local playgroups which provides my daycare children with valuable play/socializing opportunities.",
+    ],
+    educationalPhilosophyTitle: "Educational Philosophy",
+    educationalPhilosophyParagraphs: [
+      "At Mi Alegria Daycare, we believe in learning through play and respect. We support the five developmental domains which include: social, physical, intellectual, creative and emotional.",
+      "Through our child-centered approach that includes a variety of appropriate and exciting activities, your child will be fully engaged. We have fun exploring the world around us while respecting each child&apos;s unique developmental path.",
+    ],
+    facilitiesTitle: "Our Facilities",
+    facilitiesParagraphs: [
+      "Our home is located conveniently next to a park which we visit daily, providing children with ample opportunities for outdoor play and exploration. There is plenty of outside time in our backyard as well as per government recommendations.",
+      "We maintain a clean, safe, and stimulating environment with age-appropriate toys and learning materials. Our facility is designed to foster independence, creativity, and social interaction among children.",
+    ],
+    qualificationsTitle: "Qualifications",
+    qualificationsList: [
+      "Maintained required training such as First Aid certification",
+      "Operating in compliance with childcare licensing regulations",
+      "Valid liability insurance for the children and home",
+      "Ensuring safety measures are continually addressed, including annual VIHA inspection",
+      "Regular emergency drills and safety planning",
+    ],
+    valuesTitle: "Our Values",
+    valuesList: [
+      'Creating a welcoming "open door" atmosphere for both children and their families',
+      "Developing collaborative partnerships with families and working together on common goals",
+      "Communicating with families about their child&apos;s daily experiences in a positive and respectful manner",
+      "Encouraging children to be independent and responsible for their own actions",
+      "Ensuring children learn our core values: Be Safe, Be Kind, Have Fun!",
+    ],
+    goalTitle: "Our Goal",
+    goalDescription:
+      "Our goal is to provide quality childcare in a loving environment whilst addressing safety, health and hygiene, guidance and discipline. Through our choice of programming and by constantly being professional we ensure the children learn and have fun, as well as allowing them to follow their own unique developmental path. Mi Alegria Daycare is a place where children can feel comfortable and safe while parents feel at ease leaving their precious child(ren) in our capable care.",
+    ctaTitle: "Interested in learning more?",
+    ctaButtonText: "Contact Us Today",
   },
+
   contact: {
     title: "Contact Us",
     form: {

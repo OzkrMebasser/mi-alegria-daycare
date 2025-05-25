@@ -223,19 +223,50 @@ export const es = {
   },
 
   about: {
-    title: "Sobre Mi Alegría",
-    mission:
-      "Nuestra misión es proporcionar un ambiente nurturante donde los niños puedan aprender, crecer y prosperar.",
-    values: {
-      title: "Nuestros Valores",
-      items: [
-        "Seguridad Primero",
-        "Alegría en el Aprendizaje",
-        "Conciencia Cultural",
-        "Conexión Comunitaria",
-      ],
-    },
+    title: "Acerca de Mi Alegría Guardería",
+    description:
+      "Un lugar donde los niños pueden sentirse cómodos y seguros mientras los padres se sienten tranquilos al dejar a sus preciados hijos bajo nuestro cuidado capaz.",
+    owner: "Propietaria y proveedora de la guardería",
+
+    personalStoryTitle: "Nuestra Historia",
+    personalStoryParagraphs: [
+      "Mi nombre es Priscila Spahn y soy originaria de Monterrey, México. Me gusta brindar cuidado dedicado a los pequeños que se confían a mi guardería, convirtiéndome así en parte de sus vidas y las de sus familias.",
+      "Mi esposo, que es originario de Suiza, y yo tenemos tres maravillosos hijos que ahora son jóvenes adultos y adolescentes. Están entusiasmados de ser parte de una familia multiétnica y disfrutan apoyarme de vez en cuando pasando tiempo con los niños de la guardería.",
+      "Hablo español en casa y creo en la filosofía de aprender a través del juego. Nos gusta asistir a varios grupos de juego locales, lo que brinda a mis niños de la guardería valiosas oportunidades de juego y socialización.",
+    ],
+    educationalPhilosophyTitle: "Filosofía Educativa",
+    educationalPhilosophyParagraphs: [
+      "En Mi Alegría Guardería creemos en aprender jugando y con respeto. Apoyamos los cinco dominios del desarrollo que incluyen: social, físico, intelectual, creativo y emocional.",
+      "Con nuestro enfoque centrado en el niño, que incluye una variedad de actividades apropiadas y emocionantes, su hijo estará completamente comprometido. Nos divertimos explorando el mundo que nos rodea mientras respetamos el camino único de desarrollo de cada niño.",
+    ],
+    facilitiesTitle: "Nuestras Instalaciones",
+    facilitiesParagraphs: [
+      "Nuestro hogar está convenientemente ubicado junto a un parque que visitamos diariamente, proporcionando a los niños amplias oportunidades para el juego y la exploración al aire libre. También hay mucho tiempo fuera en nuestro patio trasero, según las recomendaciones gubernamentales.",
+      "Mantenemos un ambiente limpio, seguro y estimulante con juguetes y materiales de aprendizaje apropiados para la edad. Nuestras instalaciones están diseñadas para fomentar la independencia, la creatividad y la interacción social entre los niños.",
+    ],
+    qualificationsTitle: "Calificaciones",
+    qualificationsList: [
+      "Mantener la formación requerida, como la certificación en primeros auxilios",
+      "Operar en cumplimiento con las regulaciones de licenciamiento para cuidado infantil",
+      "Seguro de responsabilidad civil válido para los niños y el hogar",
+      "Asegurar que las medidas de seguridad se aborden continuamente, incluyendo inspección anual de VIHA",
+      "Simulacros de emergencia regulares y planificación de seguridad",
+    ],
+    valuesTitle: "Nuestros Valores",
+    valuesList: [
+      'Crear un ambiente acogedor de "puertas abiertas" tanto para los niños como para sus familias',
+      "Desarrollar alianzas colaborativas con las familias y trabajar juntos en objetivos comunes",
+      "Comunicar a las familias sobre las experiencias diarias de sus hijos de manera positiva y respetuosa",
+      "Fomentar que los niños sean independientes y responsables de sus propias acciones",
+      "Asegurar que los niños aprendan nuestros valores fundamentales: ¡Sé seguro, sé amable, diviértete!",
+    ],
+    goalTitle: "Nuestra Meta",
+    goalDescription:
+      "Nuestra meta es proporcionar cuidado infantil de calidad en un ambiente amoroso, atendiendo la seguridad, salud e higiene, orientación y disciplina. A través de nuestra selección de programas y manteniéndonos profesionales constantemente, aseguramos que los niños aprendan y se diviertan, permitiéndoles seguir su propio camino único de desarrollo. Mi Alegría Guardería es un lugar donde los niños pueden sentirse cómodos y seguros mientras los padres se sienten tranquilos al dejar a sus preciados hijos bajo nuestro cuidado capaz.",
+    ctaTitle: "¿Interesado en saber más?",
+    ctaButtonText: "Contáctanos Hoy",
   },
+
   contact: {
     title: "Contáctanos",
     form: {
