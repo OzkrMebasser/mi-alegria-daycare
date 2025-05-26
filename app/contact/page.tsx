@@ -1,86 +1,122 @@
-'use client';
+"use client";
 
-import { useTranslation } from 'react-i18next';
-import { FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleEmailClick = () => {
+    const { name, email, subject, message } = formData;
+    const body = `Nombre: ${name}\nEmail: ${email}\n\n${message}`;
+    const mailtoLink = `mailto:mialegriadaycare@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
     <div className="min-h-screen py-12 bg-gradient-to-b from-white to-primary-light/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="font-display text-4xl md:text-5xl text-center text-gray-800 mb-12">
-          {t('contact.title')}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-medium text-center text-gray-800 mb-2">
+          {/* Contact Us */}
+          {t("contact.title")}
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <h3 className="text-xl font-medium text-center text-gray-800 mb-12">
+          {/* Need more time? We can help you with childcare */}
+          {t("contact.subtitle")}
+        </h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  {t('contact.form.name')}
-                </label>
+          <div className="relative py-3 sm:max-w-xl sm:mx-auto w-full">
+            {/* Decorative Backgrounds */}
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform sm-skew-y-6 sm:skew-y-0 sm:-rotate-6 -rotate-[5deg] rounded-3xl" />
+
+            <div className="absolute inset-0 bg-gradient-to-r from-green-700 to-yellow-500 shadow-lg transform smskew-y-6 sm:skew-y-0 sm:rotate-6 rotate-[5deg] rounded-3xl" />
+
+            <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg rounded-3xl sm:p-10">
+              <div className="text-center pb-6">
+                <h2 className="text-3xl">{t("contact.formTitle")}</h2>
+                <p className="text-gray-300">{t("contact.formSubtitle")}</p>
+              </div>
+
+              <form>
                 <input
+                  className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
-                  id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-dark focus:ring focus:ring-primary-light focus:ring-opacity-50"
+                  placeholder={t("contact.form.name") }
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  {t('contact.form.email')}
-                </label>
+
                 <input
+                  className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-dark focus:ring focus:ring-primary-light focus:ring-opacity-50"
+                  placeholder={t("contact.form.email")}
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  {t('contact.form.message')}
-                </label>
+
+                <input
+                  className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder={t("contact.form.subject")}
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+
                 <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-dark focus:ring focus:ring-primary-light focus:ring-opacity-50"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-full transition-colors"
-              >
-                {t('contact.form.submit')}
-              </button>
-            </form>
+                  className="shadow mb-4 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder={
+                    t("contact.form.message") || "Type your message here..."
+                  }
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  style={{ height: "121px" }}
+                ></textarea>
+
+                <div className="flex justify-center">
+                  <button
+                    type="button"
+                    onClick={handleEmailClick}
+                    className="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  >
+                    {t("contact.form.submit") || "Send"} ➤
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
 
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="flex items-center space-x-4 text-gray-600">
-                <FaMapMarkerAlt className="w-6 h-6 text-primary-dark" />
-                <span>{t('footer.address')}</span>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="flex items-center space-x-4 text-gray-600">
-                <FaPhone className="w-6 h-6 text-primary-dark" />
-                <span>{t('footer.phone')}</span>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="flex items-center space-x-4 text-gray-600">
-                <FaEnvelope className="w-6 h-6 text-primary-dark" />
-                <span>info@mialegria.ca</span>
-              </div>
-            </div>
+          {/* Contact Image */}
+          <div className="flex justify-center">
+            <img
+              src="https://images.pexels.com/photos/4959712/pexels-photo-4959712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Contact us"
+              className="rounded-lg shadow-lg w-full h-auto object-cover max-h-[500px]"
+            />
           </div>
         </div>
       </div>

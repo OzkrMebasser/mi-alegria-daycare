@@ -29,7 +29,7 @@ const HomeSection = () => {
   const emailBody = i18n.language.startsWith("es") ? emailBodyEs : emailBodyEn;
 
   // Crea el enlace mailto con el asunto y cuerpo adecuados
-  const mailtoLink = `mailto:contacto@tuhotel.com?subject=${encodeURIComponent(
+  const mailtoLink = `mailto:mialegriadaycare@gmail.com?subject=${encodeURIComponent(
     emailSubject
   )}&body=${encodeURIComponent(emailBody)}`;
 

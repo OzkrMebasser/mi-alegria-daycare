@@ -269,9 +269,15 @@ export const es = {
 
   contact: {
     title: "Contáctanos",
+        subtitle:
+      "¿Necesitas más tiempo? Podemos ayudarte con el cuidado de tus hijos.",
+    formTitle: "¡Envíanos un Mensaje!",
+    formSubtitle:
+      "Rellene el siguiente formulario por favor.",
     form: {
       name: "Tu Nombre",
       email: "Correo Electrónico",
+      subject: "Asunto",
       message: "Mensaje",
       submit: "Enviar Mensaje",
     },

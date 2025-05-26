@@ -259,9 +259,13 @@ export const en = {
 
   contact: {
     title: "Contact Us",
+    subtitle: "Need more time? We can help you with childcare",
+    formTitle: "Send us a Message!",
+    formSubtitle: "Please fill out the following form",
     form: {
       name: "Your Name",
       email: "Email Address",
+      subject: "Subject",
       message: "Message",
       submit: "Send Message",
     },
