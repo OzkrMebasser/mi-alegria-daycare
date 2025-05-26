@@ -257,19 +257,30 @@ export const en = {
     ctaButtonText: "Contact Us Today",
   },
 
-  contact: {
-    title: "Contact Us",
-    subtitle: "Need more time? We can help you with childcare",
-    formTitle: "Send us a Message!",
-    formSubtitle: "Please fill out the following form",
-    form: {
-      name: "Your Name",
-      email: "Email Address",
-      subject: "Subject",
-      message: "Message",
-      submit: "Send Message",
+ contact: {
+  title: "Contact Us",
+  subtitle: "Need more time? We can help you with childcare",
+  formTitle: "Send us a Message!",
+  formSubtitle: "Please fill out the following form",
+  form: {
+    name: "Your Name",
+    email: "Email Address",
+    subject: "Subject",
+    message: "Message",
+    submit: "Send Message",
+    success: "Your message has been sent successfully!",
+    error: "There was an error sending your message. Please try again.",
+    validation: {
+      allFields: "All fields are required.",
+      name: "Please enter your name.",
+      email: "Please enter a valid email address.",
+      subject: "Please enter a subject.",
+      message: "Please enter a message.",
     },
+    rateLimit: "You have already sent a message recently. Please wait before trying again.",
   },
+}
+,
   footer: {
     rights: "All rights reserved",
     address: "123 Joy Street, Toronto, ON M5V 2K1",
