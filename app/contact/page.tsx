@@ -22,29 +22,13 @@ export default function Contact() {
 
   // Schema de validación con yup usando tus mensajes de traducción
   const schema = yup.object().shape({
-    name: yup
-      .string()
-      .required(t("contact.form.validation.name") || "Please enter your name."),
+    name: yup.string().required(t("contact.form.validation.name")),
     email: yup
       .string()
-      .required(
-        t("contact.form.validation.email") ||
-          "Please enter a valid email address."
-      )
-      .email(
-        t("contact.form.validation.email") ||
-          "Please enter a valid email address."
-      ),
-    subject: yup
-      .string()
-      .required(
-        t("contact.form.validation.subject") || "Please enter a subject."
-      ),
-    message: yup
-      .string()
-      .required(
-        t("contact.form.validation.message") || "Please enter a message."
-      ),
+      .required(t("contact.form.validation.email"))
+      .email(t("contact.form.validation.email")),
+    subject: yup.string().required(t("contact.form.validation.subject")),
+    message: yup.string().required(t("contact.form.validation.message")),
   });
 
   const {
@@ -66,10 +50,7 @@ export default function Contact() {
 
   const onSubmit = async (data: FormValues) => {
     if (!canSendEmail()) {
-      setError(
-        t("contact.form.rateLimit") ||
-          "Please wait a bit before sending another message."
-      );
+      setError(t("contact.form.rateLimit"));
       return;
     }
 
@@ -131,7 +112,7 @@ export default function Contact() {
               </div>
 
               {error && (
-                <p className="text-red-500 text-center mb-4 font-semibold">
+                <p className="bg-red-500  text-center mb-4 font-semibold rounded-lg p-2 text-white">
                   {error}
                 </p>
               )}
@@ -142,8 +123,11 @@ export default function Contact() {
                 </p>
               )}
               {/*Validation name */}
+
               {errors.name && (
-                <p className="text-red-400 mb-2">{errors.name.message}</p>
+                <p className="bg-red-400 text-center mb-4 font-semibold rounded-lg py-3 text-white">
+                  {errors.name.message}
+                </p>
               )}
               <form onSubmit={handleSubmit(onSubmit)} ref={formRef} noValidate>
                 <input
@@ -157,7 +141,9 @@ export default function Contact() {
 
                 {/*Validation email */}
                 {errors.email && (
-                  <p className="text-red-400 mb-2">{errors.email.message}</p>
+                  <p className="bg-red-400 text-center mb-4 font-semibold rounded-lg py-3 text-white">
+                    {errors.email.message}
+                  </p>
                 )}
                 <input
                   {...register("email")}
@@ -165,12 +151,13 @@ export default function Contact() {
                   type="email"
                   name="email"
                   placeholder={t("contact.form.email")}
-                 aria-invalid={!!errors.email}
-
+                  aria-invalid={!!errors.email}
                 />
                 {/*Validation subject */}
                 {errors.subject && (
-                  <p className="text-red-400 mb-2">{errors.subject.message}</p>
+                  <p className="bg-red-400 text-center mb-4 font-semibold rounded-lg py-3 text-white">
+                    {errors.subject.message}
+                  </p>
                 )}
                 <input
                   {...register("subject")}
@@ -178,12 +165,14 @@ export default function Contact() {
                   type="text"
                   name="subject"
                   placeholder={t("contact.form.subject")}
-                  aria-invalid={!!errors.subject }
+                  aria-invalid={!!errors.subject}
                 />
 
                 {/*Validation message */}
                 {errors.message && (
-                  <p className="text-red-400 mb-2">{errors.message.message}</p>
+                  <p className="bg-red-400 text-center mb-4 font-semibold rounded-lg py-3 text-white">
+                    {errors.message.message}
+                  </p>
                 )}
                 <textarea
                   {...register("message")}

@@ -269,17 +269,27 @@ export const es = {
 
   contact: {
     title: "Contáctanos",
-        subtitle:
-      "¿Necesitas más tiempo? Podemos ayudarte con el cuidado de tus hijos.",
-    formTitle: "¡Envíanos un Mensaje!",
-    formSubtitle:
-      "Rellene el siguiente formulario por favor.",
+    subtitle: "¿Necesitas más tiempo? Podemos ayudarte con el cuidado de niños",
+    formTitle: "¡Envíanos un mensaje!",
+    formSubtitle: "Por favor completa el siguiente formulario",
     form: {
-      name: "Tu Nombre",
-      email: "Correo Electrónico",
+      name: "Tu nombre",
+      email: "Correo electrónico",
       subject: "Asunto",
       message: "Mensaje",
-      submit: "Enviar Mensaje",
+      submit: "Enviar mensaje",
+      success: "¡Tu mensaje ha sido enviado con éxito!",
+      error:
+        "Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente.",
+      validation: {
+        allFields: "Todos los campos son obligatorios.",
+        name: "Por favor, ingresa tu nombre.",
+        email: "Por favor, ingresa una dirección de correo válida.",
+        subject: "Por favor, ingresa un asunto.",
+        message: "Por favor, ingresa un mensaje.",
+      },
+      rateLimit:
+        "Ya has enviado un mensaje recientemente. Por favor, espera un momento antes de intentarlo nuevamente.",
     },
   },
   footer: {
