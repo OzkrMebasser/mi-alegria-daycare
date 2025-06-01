@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { FaShieldAlt, FaGraduationCap, FaLanguage } from "react-icons/fa";
-import SimpleMap from "@/components/SImpleMap";
+import SimpleMap from "@/components/SimpleMap";
 import HeroImgSlider from "@/components/HeroImgSlider";
 import HomeSection from "./HomeSection";
 import StatsCounter from "./StatsCounter";
@@ -22,64 +22,34 @@ const images = [
 export default function Home() {
   const { t } = useTranslation();
 
-  const features = [
-    {
-      icon: FaShieldAlt,
-      title: t("home.features.safe.title"),
-      description: t("home.features.safe.description"),
-    },
-    {
-      icon: FaGraduationCap,
-      title: t("home.features.educational.title"),
-      description: t("home.features.educational.description"),
-    },
-    {
-      icon: FaLanguage,
-      title: t("home.features.bilingual.title"),
-      description: t("home.features.bilingual.description"),
-    },
-  ];
+  // const features = [
+  //   {
+  //     icon: FaShieldAlt,
+  //     title: t("home.features.safe.title"),
+  //     description: t("home.features.safe.description"),
+  //   },
+  //   {
+  //     icon: FaGraduationCap,
+  //     title: t("home.features.educational.title"),
+  //     description: t("home.features.educational.description"),
+  //   },
+  //   {
+  //     icon: FaLanguage,
+  //     title: t("home.features.bilingual.title"),
+  //     description: t("home.features.bilingual.description"),
+  //   },
+  // ];
 
   return (
     <>
-      {/* <DualNavbar /> */}
       <div className="min-h-screen">
         {/* Hero Section */}
         <HeroImgSlider images={images} />
-
-  
-
-        {/* Features Section */}
-        {/* <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display text-3xl text-center text-gray-800 mb-12">
-              {t("home.features.title")}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-secondary-light rounded-lg p-6 text-center hover:transform hover:-translate-y-1 transition-transform duration-300"
-                >
-                  <feature.icon className="w-12 h-12 mx-auto text-secondary-dark mb-4" />
-                  <h3 className="font-display text-xl text-gray-800 mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
-          
-          {/* Home Section */}
-        <HomeSection/>
+        {/* Home/Features Section */}
+        <HomeSection />
         {/*Stats counter*/}
-
         <StatsCounter />
-
         {/* Map Section */}
-
         <SimpleMap />
       </div>
     </>

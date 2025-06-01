@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
@@ -187,7 +188,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="bg-gradient-to-l from-blue-700 to-purple-700  hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-full"
+                    className="bg-white hover:bg-purple-800 text-purple-800  hover:text-white font-medium py-3 px-6 rounded-full shadow-lg"
                   >
                     {t("contact.form.submit")} ➤
                   </button>

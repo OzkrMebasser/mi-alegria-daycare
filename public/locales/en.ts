@@ -1,3 +1,5 @@
+import { title } from "node:process";
+
 export const en = {
   nav: {
     home: "Home",
@@ -227,7 +229,7 @@ export const en = {
     educationalPhilosophyTitle: "Educational Philosophy",
     educationalPhilosophyParagraphs: [
       "At Mi Alegria Daycare, we believe in learning through play and respect. We support the five developmental domains which include: social, physical, intellectual, creative and emotional.",
-      "Through our child-centered approach that includes a variety of appropriate and exciting activities, your child will be fully engaged. We have fun exploring the world around us while respecting each child&apos;s unique developmental path.",
+      "Through our child-centered approach that includes a variety of appropriate and exciting activities, your child will be fully engaged. We have fun exploring the world around us while respecting each child's unique developmental path.",
     ],
     facilitiesTitle: "Our Facilities",
     facilitiesParagraphs: [
@@ -246,7 +248,7 @@ export const en = {
     valuesList: [
       'Creating a welcoming "open door" atmosphere for both children and their families',
       "Developing collaborative partnerships with families and working together on common goals",
-      "Communicating with families about their child&apos;s daily experiences in a positive and respectful manner",
+      "Communicating with families about their child's daily experiences in a positive and respectful manner",
       "Encouraging children to be independent and responsible for their own actions",
       "Ensuring children learn our core values: Be Safe, Be Kind, Have Fun!",
     ],
@@ -257,30 +259,81 @@ export const en = {
     ctaButtonText: "Contact Us Today",
   },
 
- contact: {
-  title: "Contact Us",
-  subtitle: "Need more time? We can help you with childcare",
-  formTitle: "Send us a Message!",
-  formSubtitle: "Please fill out the following form",
-  form: {
-    name: "Your Name",
-    email: "Email Address",
-    subject: "Subject",
-    message: "Message",
-    submit: "Send Message",
-    success: "Your message has been sent successfully!",
-    error: "There was an error sending your message. Please try again.",
-    validation: {
-      allFields: "All fields are required.",
-      name: "Please enter your name.",
-      email: "Please enter a valid email address.",
-      subject: "Please enter a subject.",
-      message: "Please enter a message.",
+  contact: {
+    title: "Contact Us",
+    subtitle: "Need more time? We can help you with childcare",
+    formTitle: "Send us a Message!",
+    formSubtitle: "Please fill out the following form",
+    form: {
+      name: "Your Name",
+      email: "Email Address",
+      subject: "Subject",
+      message: "Message",
+      submit: "Send Message",
+      success: "Your message has been sent successfully!",
+      error: "There was an error sending your message. Please try again.",
+      validation: {
+        allFields: "All fields are required.",
+        name: "Please enter your name.",
+        email: "Please enter a valid email address.",
+        subject: "Please enter a subject.",
+        message: "Please enter a message.",
+      },
+      rateLimit:
+        "You have already sent a message recently. Please wait before trying again.",
     },
-    rateLimit: "You have already sent a message recently. Please wait before trying again.",
   },
-}
-,
+  blog: {
+    title: "Blog",
+    moreBlogs: "Read more blogs",
+    readMore: "Read More",
+    blogOne: {
+      title:
+        "Fewer Children, Greater Focus: The Value of Small Groups in Family Daycares",
+      subtitle:
+        "Why small groups in Canadian family daycares foster better learning and stronger relationships",
+      categories: [
+        "Childcare",
+        "Family Daycare",
+        "Early Childhood Development",
+      ],
+      paragraph_1:
+        "Family daycares in Canada are uniquely positioned to offer personalized care by maintaining small groups of children. This intimate setting enables caregivers to provide focused attention tailored to each child's developmental needs, promoting a nurturing learning environment.",
+      quote:
+        "“Small group settings in family daycares cultivate a sense of security and foster deeper connections between children and caregivers, supporting holistic development.”",
+      paragraph_2:
+        "With fewer children to care for, family daycare providers can implement individualized routines and activities that match each child's pace, interests, and abilities. This flexibility encourages children to explore and learn confidently.",
+      paragraph_3:
+        "Small groups also enhance social skills. Children engage more meaningfully with peers in a cozy environment, learning to share, communicate, and build friendships naturally under the attentive supervision of the caregiver.",
+      paragraph_4:
+        "The close-knit atmosphere of family daycares allows caregivers to observe subtle changes in each child’s behavior and development, enabling early intervention and personalized support when needed.",
+      paragraph_5:
+        "Parents often feel reassured knowing their children are part of a small, stable group where caregivers can focus on building strong, trusting relationships, which is vital for emotional well-being.",
+      paragraph_6:
+        "Though managing a family daycare with small groups requires thoughtful planning, the benefits—ranging from personalized care to improved social development—make it a highly effective model for early childhood education and care.",
+      tags: [
+        "family daycare",
+        "childcare",
+        "early childhood development",
+        "small groups",
+        "personalized care",
+      ],
+      references: {
+        title: "References",
+        items: [
+          {
+            text: "StatCan – Use of childcare services in Canada (March 2025)",
+            url: "https://www150.statcan.gc.ca/n1/daily-quotidien/250319/dq250319b-eng.htm",
+          },
+          {
+            text: "StatCan – Participation in early learning and child care",
+            url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.pdf",
+          },
+        ],
+      },
+    },
+  },
+
   footer: {
     rights: "All rights reserved",
     address: "123 Joy Street, Toronto, ON M5V 2K1",

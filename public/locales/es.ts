@@ -292,6 +292,58 @@ export const es = {
         "Ya has enviado un mensaje recientemente. Por favor, espera un momento antes de intentarlo nuevamente.",
     },
   },
+  blog: {
+    title: "Blog",
+    moreBlogs: "Leer más blogs",
+    readMore: "Leer más",
+    blogOne: {
+      title:
+        "Menos niños, mayor enfoque: El valor de los grupos pequeños en guarderías familiares",
+      subtitle:
+        "Por qué los grupos pequeños en las guarderías familiares en Canadá fomentan un mejor aprendizaje y relaciones más fuertes",
+      imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Fsmall-groups-family-daycare-benefits.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
+      author: "Priscila Sphan",
+      categories: [
+        "Cuidado infantil",
+        "Guardería familiar",
+        "Desarrollo infantil temprano",
+      ],
+      paragraph_1:
+        "Las guarderías familiares en Canadá están especialmente posicionadas para ofrecer un cuidado personalizado al mantener grupos pequeños de niños. Este entorno íntimo permite a los cuidadores brindar atención enfocada y adaptada a las necesidades de desarrollo de cada niño, promoviendo un ambiente de aprendizaje acogedor.",
+      quote:
+        "“Los entornos de grupo pequeño en guarderías familiares cultivan una sensación de seguridad y fomentan conexiones más profundas entre los niños y los cuidadores, apoyando un desarrollo integral.”",
+      paragraph_2:
+        "Con menos niños a cargo, los proveedores de guarderías familiares pueden implementar rutinas y actividades individualizadas que se adapten al ritmo, intereses y habilidades de cada niño. Esta flexibilidad les anima a explorar y aprender con confianza.",
+      paragraph_3:
+        "Los grupos pequeños también mejoran las habilidades sociales. Los niños interactúan de manera más significativa con sus compañeros en un ambiente acogedor, aprendiendo a compartir, comunicarse y crear amistades de forma natural bajo la supervisión atenta del cuidador.",
+      paragraph_4:
+        "La atmósfera cercana de las guarderías familiares permite a los cuidadores observar cambios sutiles en el comportamiento y desarrollo de cada niño, facilitando una intervención temprana y apoyo personalizado cuando sea necesario.",
+      paragraph_5:
+        "Los padres suelen sentirse tranquilos al saber que sus hijos forman parte de un grupo pequeño y estable donde los cuidadores pueden enfocarse en construir relaciones sólidas y de confianza, lo cual es vital para el bienestar emocional.",
+      paragraph_6:
+        "Aunque manejar una guardería familiar con grupos pequeños requiere una planificación cuidadosa, los beneficios —que van desde el cuidado personalizado hasta el desarrollo social mejorado— la convierten en un modelo altamente eficaz para la educación y el cuidado infantil temprano.",
+      tags: [
+        "guardería familiar",
+        "cuidado infantil",
+        "desarrollo infantil temprano",
+        "grupos pequeños",
+        "cuidado personalizado",
+      ],
+      references: {
+        title: "Referencias",
+        items:[
+        {
+          text: "StatCan – Uso de servicios de cuidado infantil en Canadá (marzo de 2025)",
+          url: "https://www150.statcan.gc.ca/n1/daily-quotidien/250319/dq250319b-eng.htm",
+        },
+        {
+          text: "StatCan – Participación en el aprendizaje temprano y cuidado infantil",
+          url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.pdf",
+        },
+      ]},
+    },
+  },
   footer: {
     rights: "Todos los derechos reservados",
     address: "123 Calle Alegría, Toronto, ON M5V 2K1",

@@ -1,30 +1,38 @@
-'use client';
+"use client";
 
-import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Blog() {
   const { t } = useTranslation();
 
+  const trimmedTitleBlogOne = t("blog.blogOne.title")
+    .replace(/:/g, ".")
+    .split(".")[0] + ".";
+
   const blogPosts = [
     {
-      title: 'The Importance of Early Childhood Education',
-      excerpt: 'Discover why the first years of education are crucial for your child\'s development...',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      date: '2024-03-15',
+      title: trimmedTitleBlogOne,
+      excerpt: t("blog.blogOne.paragraph_1"),
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Fsmall-groups-family-daycare-benefits.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
+      date: "2024-03-15",
+      url: "small-groups-family-daycare-benefits",
     },
     {
-      title: 'Benefits of Bilingual Learning',
-      excerpt: 'How learning multiple languages at an early age enhances cognitive development...',
-      image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      date: '2024-03-10',
+      title: "Benefits of Bilingual Learning",
+     excerpt: t("blog.blogOne.paragraph_2"),
+      image:
+        "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      date: "2024-03-10",
     },
     {
-      title: 'Creative Activities for Toddlers',
-      excerpt: 'Fun and educational activities to try with your little ones at home...',
-      image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      date: '2024-03-05',
+      title: "Creative Activities for Toddlers",
+   excerpt: t("blog.blogOne.paragraph_3"),
+      image:
+        "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      date: "2024-03-05",
     },
   ];
 
@@ -32,7 +40,7 @@ export default function Blog() {
     <div className="min-h-screen py-12 bg-gradient-to-b from-white to-primary-light/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl md:text-5xl text-center text-gray-800 mb-12">
-          {t('nav.blog')}
+          {t("nav.blog")}
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -53,18 +61,20 @@ export default function Blog() {
                 <time className="text-sm text-gray-500">
                   {new Date(post.date).toLocaleDateString()}
                 </time>
-                <h2 className="font-display text-xl text-gray-800 mt-2 mb-3">
+                <h2 className="font-display text-xl text-gray-800 mt-2 flex items-center mb-4">
                   {post.title}
                 </h2>
-                <p className="text-gray-600 mb-4">
-                  {post.excerpt}
+                <p className="text-gray-600 mb-4 text-justify ">
+                  {post.excerpt.length > 150
+                    ? post.excerpt.slice(0, 150) + "..."
+                    : post.excerpt}
                 </p>
-                <Link
-                  href="#"
-                  className="text-primary-dark hover:text-primary font-semibold"
-                >
-                  Read more →
-                </Link>
+            
+              <div className=" mt-8 ">
+                  <button className="bg-primary-dark hover:bg-pink-500 text-white semi-bold py-3 px-6 rounded-full shadow-lg">
+                  <Link href={`/blog/${post.url}`}>{t("blog.readMore")} →</Link>
+                </button>
+              </div>
               </div>
             </article>
           ))}

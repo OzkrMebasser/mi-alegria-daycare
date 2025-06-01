@@ -36,8 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fredoka.variable}`}>
-      <body className="min-h-screen flex flex-col font-display ">
+    <html lang="en" className={`${fredoka.variable}` }
+    suppressHydrationWarning={true} 
+    >
+      <body className="min-h-screen flex flex-col font-display " >
         <I18nProvider>
           <NavbarLayout />
           <WhatsAppButton />
