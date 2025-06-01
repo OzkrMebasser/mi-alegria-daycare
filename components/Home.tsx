@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { FaShieldAlt, FaGraduationCap, FaLanguage } from "react-icons/fa";
-import SimpleMap from "./SimpleMap";
+import MapLibreMap from "@/components/MapLibreMap";
 import HeroImgSlider from "@/components/HeroImgSlider";
 import HomeSection from "./HomeSection";
 import StatsCounter from "./StatsCounter";
@@ -50,7 +50,7 @@ export default function Home() {
         {/*Stats counter*/}
         <StatsCounter />
         {/* Map Section */}
-        <SimpleMap />
+        <MapLibreMap />
       </div>
     </>
   );
