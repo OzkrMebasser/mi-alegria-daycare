@@ -1,27 +1,24 @@
 "use client";
-import { useState, useMemo } from 'react';
-import Map from 'react-map-gl/maplibre';
-import { Layer, Source } from 'react-map-gl/maplibre';
+import { useMemo } from 'react';
+import Map, { Layer, Source } from 'react-map-gl/maplibre';
 import circle from '@turf/circle';
 import type { Feature, Polygon } from 'geojson';
+import type { StyleSpecification } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-
 const MapLibreMap = () => {
-  const position: [number, number] = [48.473695, -123.3257511]; // [lat, lng]
+  const position: [number, number] = [48.473695, -123.3257511];
   
-  // Crear el círculo con Turf.js (1500m de radio)
   const circleData: Feature<Polygon> = useMemo(() => {
     return circle(
-      [position[1], position[0]], // [lng, lat]
-      1.5, // 1500m = 1.5km
+      [position[1], position[0]],
+      1.5,
       { units: 'kilometers', steps: 64 }
     );
   }, []);
 
-  // Estilo del mapa base (OSM)
-  const mapStyle = {
-    version: 8 as 8,
+  const mapStyle: StyleSpecification = {
+    version: 8,
     sources: {
       'osm-raster-tiles': {
         type: 'raster',
@@ -46,24 +43,9 @@ const MapLibreMap = () => {
           longitude: position[1],
           latitude: position[0],
           zoom: 11,
-          
         }}
         mapStyle={mapStyle}
         style={{ width: '100%', height: '100%' }}
-        controlls={true}
-        attribution={true}
-        scrollZoom={true}
-        doubleClickZoom={true}
-        touchZoom={true}
-        dragRotate={true}
-        dragPan={true}
-        boxZoom={true}
-        keyboard={true}
-        pitchWithRotate={true}
-        maxZoom={22}
-        minZoom={2}
-        
-
       >
         <Source type="geojson" data={circleData}>
           <Layer
