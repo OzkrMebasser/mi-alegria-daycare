@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import { FaShieldAlt, FaGraduationCap, FaLanguage } from "react-icons/fa";
-import SimpleMap from "@/components/SimpleMap";
+import SimpleMap from "./SimpleMap";
 import HeroImgSlider from "@/components/HeroImgSlider";
 import HomeSection from "./HomeSection";
 import StatsCounter from "./StatsCounter";

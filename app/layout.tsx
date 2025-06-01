@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppBtn";
 import Footer from "@/components/Footer";
 import I18nProvider from "@/hooks/I18nProvider";
 import 'flag-icons/css/flag-icons.min.css';
-import "leaflet/dist/leaflet.css";
+
 
 
 
