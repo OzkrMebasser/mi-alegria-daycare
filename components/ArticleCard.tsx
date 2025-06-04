@@ -9,9 +9,13 @@ import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
+// const isMobile =
+//   typeof window !== "undefined" &&
+//   /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
 const isMobile =
   typeof window !== "undefined" &&
-  /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 interface Reference {
   text: string;
@@ -98,6 +102,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
     const utterance = new SpeechSynthesisUtterance(textToRead);
     utterance.lang = i18n.language === "es" ? "es-MX" : "en-US";
+    utterance.volume = 1.0; // Asegura volumen máximo
+    utterance.rate = 1.0; // Velocidad normal
+    utterance.pitch = 1.0; // Tono medio
     utteranceRef.current = utterance;
 
     // Configuramos eventos para manejar el final de la reproducción
@@ -127,6 +134,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
     // Cancelar cualquier reproducción en curso
     speechSynthesis.cancel();
+    setTimeout(() => {
+      speechSynthesis.speak(utterance);
+    }, 100);
     speechSynthesis.speak(utterance);
 
     // Estimación de duración en base a número de palabras (400ms por palabra)
