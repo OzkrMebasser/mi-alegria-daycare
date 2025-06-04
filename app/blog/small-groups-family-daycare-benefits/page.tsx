@@ -32,6 +32,9 @@ const Page = () => {
         paragraph_4={"blog.blogOne.paragraph_4"}
         paragraph_5={"blog.blogOne.paragraph_5"}
         paragraph_6={"blog.blogOne.paragraph_6"}
+        quoteBg="bg-yellow-50"
+        quoteColor="text-yellow-400"
+        quoteBorder="border-yellow-500"
         references={references}
       />
     </>

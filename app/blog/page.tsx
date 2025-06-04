@@ -7,13 +7,26 @@ import Link from "next/link";
 export default function Blog() {
   const { t } = useTranslation();
 
-  const trimmedTitleBlogOne = t("blog.blogOne.title")
-    .replace(/:/g, ".")
-    .split(".")[0] + ".";
+  // const trimmedTitleBlogOne = t("blog.blogOne.title")
+  // .replace(/:/g, ".")
+  // .split(".")[0] + ".";
+
+  interface BlogPost {
+    title: string;
+    excerpt: string;
+    image: string;
+    date: string;
+    url?: string;
+  }
+
+  const trimmingTitle = (trimmedText: string): string => {
+    const trimmedTitle = trimmedText.replace(/:/g, ".").split(".")[0] + ".";
+    return trimmedTitle;
+  };
 
   const blogPosts = [
     {
-      title: trimmedTitleBlogOne,
+      title: trimmingTitle(`${t("blog.blogOne.title")}`),
       excerpt: t("blog.blogOne.paragraph_1"),
       image:
         "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Fsmall-groups-family-daycare-benefits.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
@@ -21,15 +34,17 @@ export default function Blog() {
       url: "small-groups-family-daycare-benefits",
     },
     {
-      title: "Benefits of Bilingual Learning",
-     excerpt: t("blog.blogOne.paragraph_2"),
+      title: trimmingTitle(`${t("blog.blogTwo.title")}`),
+
+      excerpt: t("blog.blogTwo.paragraph_2"),
       image:
-        "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Ffrom-home-to-home.jpeg?alt=media&token=0b3b97fa-9040-4832-ace0-d77f7e31516c",
       date: "2024-03-10",
+      url: "from-home-to-home-why-many-parents-prefer-family-daycares",
     },
     {
       title: "Creative Activities for Toddlers",
-   excerpt: t("blog.blogOne.paragraph_3"),
+      excerpt: t("blog.blogOne.paragraph_3"),
       image:
         "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       date: "2024-03-05",
@@ -69,12 +84,14 @@ export default function Blog() {
                     ? post.excerpt.slice(0, 150) + "..."
                     : post.excerpt}
                 </p>
-            
-              <div className=" mt-8 ">
+
+                <div className=" mt-8 ">
                   <button className="bg-primary-dark hover:bg-pink-500 text-white semi-bold py-3 px-6 rounded-full shadow-lg">
-                  <Link href={`/blog/${post.url}`}>{t("blog.readMore")} →</Link>
-                </button>
-              </div>
+                    <Link href={`/blog/${post.url}`}>
+                      {t("blog.readMore")} →
+                    </Link>
+                  </button>
+                </div>
               </div>
             </article>
           ))}

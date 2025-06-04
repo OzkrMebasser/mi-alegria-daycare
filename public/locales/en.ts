@@ -285,8 +285,17 @@ export const en = {
   },
   blog: {
     title: "Blog",
-    moreBlogs: "Read more blogs",
-    readMore: "Read More",
+    moreBlogs: "More articles",
+    readMore: "Read more",
+    listen: "Listen to article",
+    playing: "Playing...",
+    readyToPlay: "Ready to play",
+    paused: "Paused",
+    playingArticle: "Playing article",
+    playingPaused: "Playback paused",
+    writtenBy: "Written by",
+    autorRole: "Owner",
+
     blogOne: {
       title:
         "Fewer Children, Greater Focus: The Value of Small Groups in Family Daycares",
@@ -328,6 +337,58 @@ export const en = {
           {
             text: "StatCan – Participation in early learning and child care",
             url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.pdf",
+          },
+        ],
+      },
+    },
+    blogTwo: {
+      title: "From Home to Home: Why Many Parents Prefer Family Daycares",
+      subtitle:
+        "Looking for childcare that feels like an extension of your home? Discover why family daycares are the preferred choice for many parents in Canada.",
+      imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Ffamily-daycare-home-environment.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
+      author: "Priscila Sphan",
+      categories: [
+        "Childcare",
+        "Family Daycare",
+        "Home-like Environment",
+        "Work-Life Balance",
+      ],
+      paragraph_1:
+        "In Canada, the search for the ideal childcare often leads parents to consider family daycares. Unlike larger centers, these daycares operate in a home setting, offering a warm, welcoming, and familiar atmosphere that resonates deeply with the needs of young children and their parents.",
+      quote:
+        "“Family daycares provide a warm and stable care environment that mirrors the home, offering parents peace of mind and promoting healthy child development.”",
+      paragraph_2:
+        "Familiarity and the comfort of a home-like setting are crucial for a child’s emotional development. In a family daycare, children experience a smoother transition from their own home, feeling more secure and less anxious. This environment fosters strong and trusting relationships with the caregiver, who often becomes a consistent figure in their lives.",
+      paragraph_3:
+        "In addition to emotional comfort, family daycares often offer greater scheduling flexibility and a lower caregiver-to-child ratio, allowing for more personalized attention. Caregivers can tailor activities and routines to each child's needs, encouraging development at their own pace. This individualized attention is one of the main reasons many parents prefer them.",
+      paragraph_4:
+        "The close relationship that develops between parents and caregivers in a family daycare is another key factor. Open and ongoing communication about the child’s progress, needs, and interests helps build a strong partnership, ensuring that the care received at the daycare supports and reinforces the values and routines of the home. This is essential for the child’s overall well-being.",
+      paragraph_5:
+        "In summary, the preference for family daycares in Canada stems from their ability to offer a care environment that is both professional and deeply personal. They provide a safe and nurturing space where children can thrive, and parents can feel reassured knowing their children are in a place that feels like a second home.",
+      paragraph_6:
+        "Choosing a daycare is an important decision for every family. Exploring the option of a family daycare may be the path to childcare that not only meets quality standards but also nurtures your child’s heart and mind in a loving, home-like environment.",
+      tags: [
+        "family daycare",
+        "childcare in Canada",
+        "home-like environment",
+        "benefits of family daycares",
+        "childcare choices",
+      ],
+      references: {
+        title: "References",
+        items: [
+          {
+            text: "Child Care Resource and Referral – Benefits of Family Child Care",
+            url: "https://www.childcarevictoria.org/wp-content/uploads/these-are-the-types-of-child-care-in-bc.pdf",
+          },
+          {
+            text: "Canadian Child Care Federation – Choosing Quality Child Care",
+            url: "https://cccf-fcsge.ca/ece-resources/topics/child-care-daycare/",
+          },
+          {
+            text: "Wee Watch – Why Home-Based Child Care?",
+            url: "https://weewatchfranchise.ca/1-why-home-based-child-care/",
           },
         ],
       },

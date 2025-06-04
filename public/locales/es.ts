@@ -293,9 +293,21 @@ export const es = {
     },
   },
   blog: {
-    title: "Blog",
-    moreBlogs: "Leer más blogs",
-    readMore: "Leer más",
+  title: "Blog",
+  moreBlogs: "Más artículos", 
+  readMore: "Leer más",
+  listen: "Escuchar artículo", 
+  playing: "Reproduciendo...",
+  readyToPlay: "Listo para reproducir",
+  paused: "Pausado",
+  playingArticle: "Reproduciendo artículo", 
+  playingPaused: "Reproducción pausada",
+  writtenBy: "Escrito por",
+  autorRole: "Dueña",
+
+
+
+
     blogOne: {
       title:
         "Menos niños, mayor enfoque: El valor de los grupos pequeños en guarderías familiares",
@@ -332,16 +344,70 @@ export const es = {
       ],
       references: {
         title: "Referencias",
-        items:[
-        {
-          text: "StatCan – Uso de servicios de cuidado infantil en Canadá (marzo de 2025)",
-          url: "https://www150.statcan.gc.ca/n1/daily-quotidien/250319/dq250319b-eng.htm",
-        },
-        {
-          text: "StatCan – Participación en el aprendizaje temprano y cuidado infantil",
-          url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.pdf",
-        },
-      ]},
+        items: [
+          {
+            text: "StatCan – Uso de servicios de cuidado infantil en Canadá (marzo de 2025)",
+            url: "https://www150.statcan.gc.ca/n1/daily-quotidien/250319/dq250319b-eng.htm",
+          },
+          {
+            text: "StatCan – Participación en el aprendizaje temprano y cuidado infantil",
+            url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.pdf",
+          },
+        ],
+      },
+    },
+    blogTwo: {
+      title:
+        "De casa a casa: por qué muchos padres prefieren los Family Daycares",
+      subtitle:
+        "¿Buscas un entorno de cuidado infantil que se sienta como una extensión de tu hogar? Descubre por qué las guarderías familiares son la opción preferida para muchos padres en Canadá.",
+      imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Ffamily-daycare-home-environment.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
+      author: "Priscila Sphan",
+      categories: [
+        "Cuidado infantil",
+        "Guardería familiar",
+        "Ambiente hogareño",
+        "Conciliación familiar",
+      ],
+      paragraph_1:
+        "En Canadá, la búsqueda del cuidado infantil ideal a menudo lleva a los padres a considerar las guarderías familiares. A diferencia de los centros más grandes, estas guarderías operan desde un entorno hogareño, ofreciendo una atmósfera cálida, acogedora y familiar que resuena profundamente con las necesidades de los niños pequeños y sus padres.",
+      quote:
+        "“Las guarderías familiares ofrecen un entorno de cuidado cálido y estable que se asemeja al ambiente hogareño, brindando tranquilidad a los padres y fomentando el desarrollo saludable de los niños.”",
+      paragraph_2:
+        "La familiaridad y el confort de un ambiente hogareño son cruciales para el desarrollo emocional de un niño. En una guardería familiar, los niños se benefician de una transición más suave de su propia casa, sintiéndose más seguros y menos ansiosos. Este entorno facilita la construcción de relaciones fuertes y de confianza con el cuidador, quien a menudo se convierte en una figura consistente en sus vidas.",
+      paragraph_3:
+        "Además del confort emocional, las guarderías familiares suelen ofrecer una mayor flexibilidad en horarios y una proporción de personal por niño más baja, lo que permite una atención más personalizada. Los cuidadores pueden adaptar las actividades y rutinas a las necesidades individuales de cada niño, fomentando su desarrollo a su propio ritmo. Esta atención individualizada es una de las razones principales por las que muchos padres las prefieren.",
+      paragraph_4:
+        "La relación cercana que se establece entre los padres y los cuidadores en una guardería familiar es otro factor determinante. La comunicación abierta y constante sobre el progreso, las necesidades y los intereses del niño ayuda a crear una asociación sólida, asegurando que el cuidado recibido en la guardería complemente y refuerce los valores y rutinas del hogar. Esto es fundamental para el bienestar general del niño.",
+      paragraph_5:
+        "En resumen, la preferencia por las guarderías familiares en Canadá se basa en su capacidad para ofrecer un entorno de cuidado que es a la vez profesional y profundamente personal. Proporcionan un refugio seguro y estimulante donde los niños pueden prosperar, y los padres pueden tener la tranquilidad de saber que sus hijos están en un lugar que se siente como un segundo hogar.",
+      paragraph_6:
+        "La elección de una guardería es una decisión importante para cada familia. Explorar la opción de una guardería familiar puede ser el camino hacia un cuidado infantil que no solo cumpla con los estándares de calidad, sino que también nutra el corazón y la mente de su hijo en un ambiente amoroso y hogareño.",
+      tags: [
+        "guardería familiar",
+        "cuidado infantil Canadá",
+        "ambiente hogareño",
+        "beneficios guarderías familiares",
+        "elección cuidado infantil",
+      ],
+      references: {
+        title: "Referencias",
+        items: [
+          {
+            text: "Child Care Resource and Referral – Beneficios del Cuidado Infantil en el Hogar",
+            url: "https://www.childcarevictoria.org/wp-content/uploads/these-are-the-types-of-child-care-in-bc.pdf",
+          },
+          {
+            text: "Federación Canadiense de Cuidado Infantil – Cómo Elegir un Cuidado Infantil de Calidad",
+            url: "https://cccf-fcsge.ca/ece-resources/topics/child-care-daycare/",
+          },
+          {
+            text: "Wee Watch – ¿Por qué elegir el cuidado infantil en el hogar?",
+            url: "https://weewatchfranchise.ca/1-why-home-based-child-care/",
+          },
+        ],
+      },
     },
   },
   footer: {
