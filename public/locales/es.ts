@@ -293,20 +293,17 @@ export const es = {
     },
   },
   blog: {
-  title: "Blog",
-  moreBlogs: "Más artículos", 
-  readMore: "Leer más",
-  listen: "Escuchar artículo", 
-  playing: "Reproduciendo...",
-  readyToPlay: "Listo para reproducir",
-  paused: "Pausado",
-  playingArticle: "Reproduciendo artículo", 
-  playingPaused: "Reproducción pausada",
-  writtenBy: "Escrito por",
-  autorRole: "Dueña",
-
-
-
+    title: "Blog",
+    moreBlogs: "Más artículos",
+    readMore: "Leer más",
+    listen: "Escuchar artículo",
+    playing: "Reproduciendo...",
+    readyToPlay: "Listo para reproducir",
+    paused: "Pausado",
+    playingArticle: "Reproduciendo artículo",
+    playingPaused: "Reproducción pausada",
+    writtenBy: "Escrito por",
+    autorRole: "Dueña",
 
     blogOne: {
       title:
@@ -408,6 +405,63 @@ export const es = {
           },
         ],
       },
+    },
+    blogThree: {
+      title:
+        "Las ventajas únicas del Family Daycare frente a guarderías tradicionales",
+      subtitle:
+        "Descubre cómo los family daycares ofrecen beneficios que las guarderías tradicionales no siempre pueden igualar, especialmente en el contexto canadiense.",
+      imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Ffamily-daycare-vs-traditional.jpeg?alt=media&token=4d97ff85-883d-4ef2-9e25-4a40d4e2bc61",
+      author: "Priscila Sphan",
+      categories: [
+        "Cuidado infantil",
+        "Family Daycare",
+        "Guardería tradicional",
+        "Comparación de cuidado infantil",
+      ],
+      paragraph_1:
+        "Al elegir un servicio de cuidado infantil en Canadá, muchos padres se enfrentan a la decisión entre una guardería tradicional y un family daycare. Aunque ambas opciones ofrecen ventajas, los family daycares destacan por su atención personalizada, ambiente hogareño y sólidas relaciones entre cuidador y niño.",
+      quote:
+        "“La atención íntima y personalizada que ofrece un family daycare puede marcar una gran diferencia en el bienestar emocional y el desarrollo individual del niño.”",
+      paragraph_2:
+        "A diferencia de las guarderías tradicionales, que suelen funcionar con grandes grupos y programas estructurados, los family daycares se llevan a cabo en un entorno hogareño donde los niños reciben atención en un ambiente relajado y menos institucional. Esto permite rutinas más flexibles adaptadas a las necesidades de cada niño.",
+      paragraph_3:
+        "En los family daycares, los cuidadores pueden dedicar más tiempo y atención a cada niño, identificando rápidamente sus intereses, fortalezas y áreas que requieren apoyo. Esta observación constante permite una educación temprana más enfocada y efectiva.",
+      paragraph_4:
+        "La continuidad en el cuidado es otro beneficio clave. Mientras que la rotación de personal puede ser común en centros más grandes, los family daycares generalmente cuentan con un cuidador estable que construye una relación de confianza a largo plazo con el niño, brindando seguridad emocional.",
+      paragraph_5:
+        "Los family daycares también fomentan relaciones más cercanas con los padres. La comunicación directa y diaria promueve la colaboración y el entendimiento mutuo en torno al desarrollo y bienestar del niño, algo que puede ser más difícil en entornos institucionales grandes.",
+      paragraph_6:
+        "Aunque en algunos casos las guarderías tradicionales pueden ofrecer programas más estructurados y mayores recursos, la conexión humana, la atención individualizada y el ambiente cálido de los family daycares los convierten en una opción preferida para muchas familias canadienses que buscan una experiencia de cuidado infantil acogedora y enriquecedora.",
+      tags: [
+        "family daycare",
+        "guardería tradicional",
+        "comparación de cuidado infantil",
+        "desarrollo infantil",
+        "atención personalizada",
+      ],
+   references: {
+    title: "Referencias",
+    items: [
+      {
+        text: "Wikipedia – Child care in Canada (detalla tipos de cuidado regulado, incluyendo el hogar) ",
+        url: "https://en.wikipedia.org/wiki/Child_care_in_Canada",
+      },
+      {
+        text: "Prime Minister of Canada – Inicialización del programa $10‑a‑day child care (reducción de costos, beneficios económicos)",
+        url: "https://www.pm.gc.ca/en/news/news-releases/2021/04/21/10-day-child-care-canadian-families",
+      },
+      {
+        text: "Budget 2023 – Informe federal sobre participación laboral y ahorro familiar en cuidado infantil",
+        url: "https://budget.canada.ca/fes-eea/2023/report-rapport/chap2-en.html",
+      },
+      {
+        text: "Childcare Resource and Research Unit – Early Childhood Education and Care in Canada 2019",
+        url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.htm",
+      },
+    ],
+  },
     },
   },
   footer: {

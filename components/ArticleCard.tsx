@@ -282,18 +282,6 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
                 )}
               </button>
 
-              {/* <button
-                onClick={handlePause}
-                disabled={!isSpeaking || isPaused}
-                className={`flex items-center  ${
-                  !isSpeaking || isPaused
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-500 hover:bg-blue-600"
-                } text-white font-medium py-2 px-4 rounded-full shadow transition-all`}
-              >
-                <FaCirclePause />
-                {/* {t("Pausar")} */}
-              {/* </button> */}
               {!isMobile && (
                 <button
                   onClick={handlePause}
@@ -372,15 +360,6 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
                 <blockquote
                   className={`border-l-4  ${quoteBg} text-lg italic leading-relaxed my-6 p-5 text-gray-700 rounded-r-lg ${quoteBorder}`}
                 >
-                  {/* <svg
-                    className="w-8 h-8 mb-4 text-yellow-400"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 18 14"
-                  >
-                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                  </svg> */}
                   <BiSolidQuoteRight
                     className={`w-8 h-8 mb-4 ${quoteColor} `}
                   />

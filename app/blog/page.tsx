@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Blog() {
   const { t } = useTranslation();
 
@@ -19,14 +20,15 @@ export default function Blog() {
     url?: string;
   }
 
-  const trimmingTitle = (trimmedText: string): string => {
-    const trimmedTitle = trimmedText.replace(/:/g, ".").split(".")[0] + ".";
-    return trimmedTitle;
-  };
+  // const trimmingTitle = (trimmedText: string): string => {
+  //   const trimmedTitle = trimmedText.replace(/:/g, ".").split(".")[0] + ".";
+  //   return trimmedTitle;
+  // };
 
   const blogPosts = [
     {
-      title: trimmingTitle(`${t("blog.blogOne.title")}`),
+      // title: trimmingTitle(`${t("blog.blogOne.title")}`),
+      title: t("blog.blogOne.title"),
       excerpt: t("blog.blogOne.paragraph_1"),
       image:
         "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Fsmall-groups-family-daycare-benefits.jpeg?alt=media&token=f18c94f4-12a6-41c0-bd77-cb6f375b18a0",
@@ -34,8 +36,8 @@ export default function Blog() {
       url: "small-groups-family-daycare-benefits",
     },
     {
-      title: trimmingTitle(`${t("blog.blogTwo.title")}`),
-
+      // title: trimmingTitle(`${t("blog.blogTwo.title")}`),
+      title: t("blog.blogTwo.title"),
       excerpt: t("blog.blogTwo.paragraph_2"),
       image:
         "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/blogs%2Ffrom-home-to-home.jpeg?alt=media&token=0b3b97fa-9040-4832-ace0-d77f7e31516c",
@@ -43,11 +45,12 @@ export default function Blog() {
       url: "from-home-to-home-why-many-parents-prefer-family-daycares",
     },
     {
-      title: "Creative Activities for Toddlers",
-      excerpt: t("blog.blogOne.paragraph_3"),
+      title: t("blog.blogThree.title"),
+      excerpt: t("blog.blogThree.paragraph_3"),
       image:
-        "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-3.jpeg?alt=media&token=5b88fcc5-d81a-4e76-98a8-864e5a50c255",
       date: "2024-03-05",
+      url: "family-daycare-vs-traditional-advantages",
     },
   ];
 
@@ -76,7 +79,7 @@ export default function Blog() {
                 <time className="text-sm text-gray-500">
                   {new Date(post.date).toLocaleDateString()}
                 </time>
-                <h2 className="font-display text-xl text-gray-800 mt-2 flex items-center mb-4">
+                <h2 className=" h-[6rem] font-display text-xl text-gray-800 mt-2 flex items-center mb-4">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 mb-4 text-justify ">
