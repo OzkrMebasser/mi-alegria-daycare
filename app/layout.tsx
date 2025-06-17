@@ -5,6 +5,7 @@ import NavbarLayout from "@/components/NavbarLayout";
 import WhatsAppButton from "@/components/WhatsAppBtn";
 import Footer from "@/components/Footer";
 import I18nProvider from "@/hooks/I18nProvider";
+import WildernessFooter from "@/components/Footer2"
 import 'flag-icons/css/flag-icons.min.css';
 
 
@@ -46,7 +47,8 @@ export default function RootLayout({
           {/* Add your main content here */}
           {/* Main content */}
           <main className="flex-grow">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
+          <WildernessFooter />
         </I18nProvider>
       </body>
     </html>
