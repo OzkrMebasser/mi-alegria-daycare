@@ -453,6 +453,10 @@ export const en = {
   },
 
   footer: {
+    followUs: "FOLLOW US",
+    menuFooter: "SECTIONS",
+    contact: "CONTACT",
+    telephone: "Telephone",
     rights: "All rights reserved",
     address: "123 Joy Street, Toronto, ON M5V 2K1",
     phone: "(416) 555-0123",

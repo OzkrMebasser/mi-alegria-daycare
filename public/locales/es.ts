@@ -441,30 +441,34 @@ export const es = {
         "desarrollo infantil",
         "atención personalizada",
       ],
-   references: {
-    title: "Referencias",
-    items: [
-      {
-        text: "Wikipedia – Child care in Canada (detalla tipos de cuidado regulado, incluyendo el hogar) ",
-        url: "https://en.wikipedia.org/wiki/Child_care_in_Canada",
+      references: {
+        title: "Referencias",
+        items: [
+          {
+            text: "Wikipedia – Child care in Canada (detalla tipos de cuidado regulado, incluyendo el hogar) ",
+            url: "https://en.wikipedia.org/wiki/Child_care_in_Canada",
+          },
+          {
+            text: "Prime Minister of Canada – Inicialización del programa $10‑a‑day child care (reducción de costos, beneficios económicos)",
+            url: "https://www.pm.gc.ca/en/news/news-releases/2021/04/21/10-day-child-care-canadian-families",
+          },
+          {
+            text: "Budget 2023 – Informe federal sobre participación laboral y ahorro familiar en cuidado infantil",
+            url: "https://budget.canada.ca/fes-eea/2023/report-rapport/chap2-en.html",
+          },
+          {
+            text: "Childcare Resource and Research Unit – Early Childhood Education and Care in Canada 2019",
+            url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.htm",
+          },
+        ],
       },
-      {
-        text: "Prime Minister of Canada – Inicialización del programa $10‑a‑day child care (reducción de costos, beneficios económicos)",
-        url: "https://www.pm.gc.ca/en/news/news-releases/2021/04/21/10-day-child-care-canadian-families",
-      },
-      {
-        text: "Budget 2023 – Informe federal sobre participación laboral y ahorro familiar en cuidado infantil",
-        url: "https://budget.canada.ca/fes-eea/2023/report-rapport/chap2-en.html",
-      },
-      {
-        text: "Childcare Resource and Research Unit – Early Childhood Education and Care in Canada 2019",
-        url: "https://www150.statcan.gc.ca/n1/pub/89-652-x/89-652-x2014005-eng.htm",
-      },
-    ],
-  },
     },
   },
   footer: {
+    followUs: "SÍGUENOS",
+    menuFooter: "SECCIONES",
+    contact: "CONTACTO",
+     telephone: "Telefono",
     rights: "Todos los derechos reservados",
     address: "123 Calle Alegría, Toronto, ON M5V 2K1",
     phone: "(416) 555-0123",
