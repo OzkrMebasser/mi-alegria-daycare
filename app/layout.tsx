@@ -3,13 +3,9 @@ import type { Metadata } from "next";
 import { Inter, Fredoka } from "next/font/google";
 import NavbarLayout from "@/components/NavbarLayout";
 import WhatsAppButton from "@/components/WhatsAppBtn";
-import Footer from "@/components/Footer";
 import I18nProvider from "@/hooks/I18nProvider";
-import WildernessFooter from "@/components/Footer2"
-import 'flag-icons/css/flag-icons.min.css';
-
-
-
+import Footer from "@/components/Footer";
+import "flag-icons/css/flag-icons.min.css";
 
 // const inter = Inter({
 //   subsets: ["latin"],
@@ -25,11 +21,10 @@ export const metadata: Metadata = {
   title: "Mi Alegría Daycare - Where Joy and Learning Come Together",
   description:
     "A nurturing daycare center providing bilingual education and care for children in Victoria B.C.",
-    icons: {
+  icons: {
     icon: "/favicon.ico",
   },
-
-  };
+};
 
 export default function RootLayout({
   children,
@@ -37,10 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fredoka.variable}` }
-    suppressHydrationWarning={true} 
+    <html
+      lang="en"
+      className={`${fredoka.variable}`}
+      suppressHydrationWarning={true}
     >
-      <body className="min-h-screen flex flex-col font-display " >
+      <body className="min-h-screen flex flex-col font-display ">
         <I18nProvider>
           <NavbarLayout />
           <WhatsAppButton />
@@ -48,7 +45,7 @@ export default function RootLayout({
           {/* Main content */}
           <main className="flex-grow">{children}</main>
           {/* <Footer /> */}
-          <WildernessFooter />
+          <Footer />
         </I18nProvider>
       </body>
     </html>
