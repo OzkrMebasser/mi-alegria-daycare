@@ -157,7 +157,7 @@ export const en = {
       nutritionApproach: {
         title: "Our Nutrition Approach",
         points: {
-          one: "We respect your child's autonomy in deciding whether to eat, what to eat from what is offered, and how much to eat.",
+          one: "We respect your child's autonomy in deciding whether to eat, what to eat from what parents send, and how much to eat.",
           two: "We never force children to eat, threaten them, or use food as a reward or punishment.",
           three:
             "We follow proper food storage and handling procedures to ensure food safety.",
@@ -176,7 +176,7 @@ export const en = {
           healthHygiene: {
             title: "Health & Hygiene",
             description:
-              "Regular handwashing, sanitizing toys and surfaces, and teaching proper hygiene habits to minimize spread of illness.",
+              "Regular handwashing, sanitizing toys and surfaces, and teaching proper hygiene habits to minimize the spread of illness.",
           },
           emergencyPreparedness: {
             title: "Emergency Preparedness",
@@ -233,7 +233,7 @@ export const en = {
     ],
     facilitiesTitle: "Our Facilities",
     facilitiesParagraphs: [
-      "Our home is located conveniently next to a park which we visit daily, providing children with ample opportunities for outdoor play and exploration. There is plenty of outside time in our backyard as well as per government recommendations.",
+      "Our home is conveniently located next to a park that we visit frequently, providing children with ample opportunities for outdoor play and exploration. We also spend plenty of time in our backyard, in accordance with government recommendations.",
       "We maintain a clean, safe, and stimulating environment with age-appropriate toys and learning materials. Our facility is designed to foster independence, creativity, and social interaction among children.",
     ],
     qualificationsTitle: "Qualifications",
@@ -254,7 +254,7 @@ export const en = {
     ],
     goalTitle: "Our Goal",
     goalDescription:
-      "Our goal is to provide quality childcare in a loving environment whilst addressing safety, health and hygiene, guidance and discipline. Through our choice of programming and by constantly being professional we ensure the children learn and have fun, as well as allowing them to follow their own unique developmental path. Mi Alegria Daycare is a place where children can feel comfortable and safe while parents feel at ease leaving their precious child(ren) in our capable care.",
+      "Our goal is to provide quality childcare in a loving environment whilst addressing safety, health and hygiene, guidance and discipline. Through our choice of programming, and by constantly being professional, we ensure the children learn and have fun, as well as allow them to follow their own unique developmental path. Mi Alegria Daycare is a place where children can feel comfortable and safe while parents feel at ease leaving their precious child(ren) in our capable care.",
     ctaTitle: "Interested in learning more?",
     ctaButtonText: "Contact Us Today",
   },
@@ -327,8 +327,8 @@ export const en = {
         "small groups",
         "personalized care",
       ],
+      referencesTitle: "References",
       references: {
-        title: "References",
         items: [
           {
             text: "StatCan – Use of childcare services in Canada (March 2025)",
@@ -375,8 +375,8 @@ export const en = {
         "benefits of family daycares",
         "childcare choices",
       ],
+      referencesTitle: "References",
       references: {
-        title: "References",
         items: [
           {
             text: "Child Care Resource and Referral – Benefits of Family Child Care",
@@ -428,8 +428,8 @@ export const en = {
         "child development",
         "personalized care",
       ],
+      referencesTitle: "References",
       references: {
-        title: "References",
         items: [
           {
             text: "Wikipedia – Child care in Canada (describes regulated types of care, including home-based care)",

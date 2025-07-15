@@ -162,7 +162,7 @@ export const es = {
       nutritionApproach: {
         title: "Nuestro Enfoque Nutricional",
         points: {
-          one: "Respetamos la autonomía de tu hijo al decidir si comer, qué comer de lo que se ofrece y cuánto comer.",
+          one: "Respetamos la autonomía de tu hijo al decidir si comer, qué comer de lo que los padren les envian, y cuánto comer.",
           two: "Nunca obligamos a los niños a comer, ni los amenazamos, ni utilizamos la comida como premio o castigo.",
           three:
             "Seguimos procedimientos adecuados de almacenamiento y manipulación de alimentos para garantizar la seguridad alimentaria.",
@@ -241,7 +241,7 @@ export const es = {
     ],
     facilitiesTitle: "Nuestras Instalaciones",
     facilitiesParagraphs: [
-      "Nuestro hogar está convenientemente ubicado junto a un parque que visitamos diariamente, proporcionando a los niños amplias oportunidades para el juego y la exploración al aire libre. También hay mucho tiempo fuera en nuestro patio trasero, según las recomendaciones gubernamentales.",
+      "Nuestro hogar está convenientemente ubicado junto a un parque que visitamos con frecuencia, lo que brinda a los niños amplias oportunidades para jugar al aire libre y explorar. También pasamos mucho tiempo en el patio trasero, conforme a las recomendaciones del gobierno.",
       "Mantenemos un ambiente limpio, seguro y estimulante con juguetes y materiales de aprendizaje apropiados para la edad. Nuestras instalaciones están diseñadas para fomentar la independencia, la creatividad y la interacción social entre los niños.",
     ],
     qualificationsTitle: "Calificaciones",
@@ -339,8 +339,8 @@ export const es = {
         "grupos pequeños",
         "cuidado personalizado",
       ],
+      referencesTitle: "Referencias",
       references: {
-        title: "Referencias",
         items: [
           {
             text: "StatCan – Uso de servicios de cuidado infantil en Canadá (marzo de 2025)",
@@ -388,8 +388,8 @@ export const es = {
         "beneficios guarderías familiares",
         "elección cuidado infantil",
       ],
+      referencesTitle: "Referencias",
       references: {
-        title: "Referencias",
         items: [
           {
             text: "Child Care Resource and Referral – Beneficios del Cuidado Infantil en el Hogar",
@@ -441,8 +441,9 @@ export const es = {
         "desarrollo infantil",
         "atención personalizada",
       ],
+      referencesTitle: "Referencias",
       references: {
-        title: "Referencias",
+      
         items: [
           {
             text: "Wikipedia – Child care in Canada (detalla tipos de cuidado regulado, incluyendo el hogar) ",
@@ -468,7 +469,7 @@ export const es = {
     followUs: "SÍGUENOS",
     menuFooter: "SECCIONES",
     contact: "CONTACTO",
-     telephone: "Telefono",
+    telephone: "Telefono",
     rights: "Todos los derechos reservados",
     address: "123 Calle Alegría, Toronto, ON M5V 2K1",
     phone: "(416) 555-0123",

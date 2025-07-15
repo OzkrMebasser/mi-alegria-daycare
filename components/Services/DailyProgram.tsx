@@ -124,14 +124,14 @@ const DailyProgram = ({ t }: DailyProgramProps) => {
                   </span>
                 </li>
                 {/*Activiy 8  */}
-                <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
+                {/* <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">
                   <span className="border-r border-gray-200 font-medium flex items-center pl-2">
                     3:00-3:30
                   </span>
                   <span className="p-2 flex items-center text-justify">
                     {t("services.daily.schedule.activity8")}
                   </span>
-                </li>
+                </li> */}
                 {/*Activity 9 */}
 
                 <li className="border border-1-gray-200 grid grid-cols-[1.1fr_2fr] lg:grid-cols-[.6fr_2fr] h-[auto]">

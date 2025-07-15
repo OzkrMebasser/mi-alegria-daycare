@@ -18,7 +18,7 @@ const images = [
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-7.png?alt=media&token=ab84529d-7943-4fdf-b579-173fca06b403",
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-8.jpeg?alt=media&token=713e36dc-63aa-4f0e-8f80-09af59230c6c",
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-9.jpeg?alt=media&token=3853d592-2391-4c1d-9d33-258ac62be35c",
-  
+  "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-10.png?alt=media&token=9022101f-7e93-42c0-bc2c-94a86b2962b2"
 ];
 
 export default function Home() {

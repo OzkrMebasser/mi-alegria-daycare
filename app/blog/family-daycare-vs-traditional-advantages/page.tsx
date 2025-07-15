@@ -3,6 +3,7 @@ import React from "react";
 import ArticleCard from "@/components/ArticleCard";
 import { useTranslation } from "react-i18next";
 
+
 interface Reference {
   text: string;
   url: string;
@@ -23,7 +24,7 @@ const Page = () => {
       <ArticleCard
         title={"blog.blogThree.title"}
         subtitle={"blog.blogThree.subtitle"}
-        imageUrl="https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-3.jpeg?alt=media&token=5b88fcc5-d81a-4e76-98a8-864e5a50c255"
+        imageUrl="https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-3.jpeg?alt=media&token=afd47019-8594-44cd-9711-536b8448b6f9"
         author="Priscila Sphan"
         paragraph_1={"blog.blogThree.paragraph_1"}
         quote={"blog.blogThree.quote"}
@@ -35,6 +36,7 @@ const Page = () => {
         quoteBg="bg-green-50"
         quoteColor="text-green-400"
         quoteBorder="border-green-500"
+        referencesTitle={"blog.blogThree.referencesTitle"}
         references={references}
       />
     </>

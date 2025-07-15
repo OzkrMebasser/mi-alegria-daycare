@@ -48,7 +48,7 @@ export default function Blog() {
       title: t("blog.blogThree.title"),
       excerpt: t("blog.blogThree.paragraph_3"),
       image:
-        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-3.jpeg?alt=media&token=5b88fcc5-d81a-4e76-98a8-864e5a50c255",
+        "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-3.jpeg?alt=media&token=afd47019-8594-44cd-9711-536b8448b6f9",
       date: "2024-03-05",
       url: "family-daycare-vs-traditional-advantages",
     },

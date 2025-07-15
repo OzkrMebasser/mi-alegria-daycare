@@ -35,6 +35,7 @@ const Page = () => {
         quoteBg="bg-yellow-50"
         quoteColor="text-yellow-400"
         quoteBorder="border-yellow-500"
+        referencesTitle={"blog.blogOne.referencesTitle"}
         references={references}
       />
     </>

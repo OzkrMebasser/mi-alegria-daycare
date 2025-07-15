@@ -57,7 +57,7 @@ const HomeSection = () => {
             <div className="md:w-1/2">
               <div className="bg-white  rounded-lg shadow-xl">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-4.jpeg?alt=media&token=65c17769-9763-4976-bba4-b012c9e4d953"
+                  src="https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-4.jpeg?alt=media&token=e46a5f53-76db-406c-a109-749cd1ce7d89"
                   alt={t("homeSection.hero.altImage")}
                   className="rounded-lg mb-4"
                 />

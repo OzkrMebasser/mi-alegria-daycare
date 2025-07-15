@@ -35,6 +35,7 @@ const Page = () => {
         quoteBg="bg-purple-50"
         quoteColor="text-purple-400"
         quoteBorder="border-purple-500"
+        referencesTitle={"blog.blogTwo.referencesTitle"}
         references={references}
       />
     </>

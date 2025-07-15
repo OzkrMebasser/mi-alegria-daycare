@@ -24,6 +24,7 @@ interface ArticleCardProps {
   quote: string;
   quoteColor: string;
   quoteBorder: string;
+  referencesTitle: string;
   references?: Reference[];
 }
 
@@ -42,10 +43,12 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   quote,
   quoteColor,
   quoteBorder,
+  referencesTitle,
   references = [],
 }) => {
   const { t } = useTranslation();
 
+  console.log(referencesTitle)
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
       <div
@@ -138,7 +141,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             {references && references.length > 0 && (
               <div className="mt-10 border-t pt-5">
                 <h3 className="text-xl font-bold mb-4 text-gray-800">
-                  {t("Referencias")}
+                  {t(referencesTitle)}
+               
                 </h3>
                 <ul className="space-y-3">
                   {references.map((ref, index) => (
