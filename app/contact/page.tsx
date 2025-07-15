@@ -60,15 +60,15 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_qa0g9xz",
-        "template_02ypadr",
+        "service_seioiix",
+        "template_9cw03q2",
         {
           from_name: data.name,
           reply_to: data.email,
           subject: data.subject,
           message: data.message,
         },
-        "rZ6_7d53He4pfv50b"
+        "Oz4D5LefXzdjhBTam"
       );
 
       setSuccess(t("contact.form.success") || "Message sent successfully!");
