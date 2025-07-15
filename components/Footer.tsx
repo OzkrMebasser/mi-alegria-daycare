@@ -1,6 +1,5 @@
 "use client";
 import { useTranslation } from "react-i18next";
-import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
 import SocialButtons from "./SocilaMediaBtns";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,6 +21,16 @@ export const navItems: NavItem[] = [
 
 const WildernessFooter = () => {
   const { t } = useTranslation();
+
+  const { i18n } = useTranslation();
+
+  const whatsappUrlEs = `https://wa.me/12508843091?text=Hola%20Mi%20Alegria%20Daycare!%20Me%20gustaria%20saber%20mas%20sobre%20sus%20servicios.`;
+  const whatsappUrlEn = `https://wa.me/12508843091?text=Hello%20Mi%20Alegria%20Daycare!%20I%20would%20like%20to%20know%20more%20about%20your%20services.`;
+
+  const whatsappUrl = i18n.language.startsWith("es")
+    ? whatsappUrlEs
+    : whatsappUrlEn;
+
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-gradient-to-r from-red-500 to-pink-400  text-white px-8 py-12">
@@ -54,7 +63,7 @@ const WildernessFooter = () => {
           <div className="col-span-1 lg:ml-[2rem]">
             <h3 className="text-lg font-bold mb-6 tracking-wider">
               <strong className="strong-underline underline-green">
-               {t("footer.menuFooter")}
+                {t("footer.menuFooter")}
               </strong>
             </h3>
             <ul className="space-y-3 flex flex-col ">
@@ -75,22 +84,25 @@ const WildernessFooter = () => {
             <h3 className="text-lg font-bold mb-6 tracking-wider">
               {" "}
               <strong className="strong-underline underline-blue">
-                 {t("footer.contact")}
+                {t("footer.contact")}
               </strong>
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="tel:+12508843091"
                   className="relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
-                   {t("footer.telephone")}
+                  {t("footer.telephone")}
                 </a>
               </li>
               <li>
-                <span className="text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+                <a
+                  href={whatsappUrl}
+                  className="text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                >
                   WhatsApp
-                </span>
+                </a>
               </li>
             </ul>
           </div>
