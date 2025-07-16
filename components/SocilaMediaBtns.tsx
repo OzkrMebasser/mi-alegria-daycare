@@ -5,6 +5,8 @@ const AnimatedSocialIcons = () => {
   const [hoveredIcon, setHoveredIcon] = useState<number | null>(null);
   const [animationDemo, setAnimationDemo] = useState<number | null>(null);
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
   const socialIcons = [
     {
       id: 1,
@@ -45,8 +47,8 @@ const AnimatedSocialIcons = () => {
   };
 
   return (
-    <div className=" flex items-left justify-left ">
-      <div className="scale-150 ">
+    <div className="flex items-left justify-left">
+      <div className="scale-150">
         <ul className="flex justify-center items-center list-none p-0 m-0">
           {socialIcons.map((social, index) => {
             const IconComponent = social.icon;
@@ -55,97 +57,121 @@ const AnimatedSocialIcons = () => {
             return (
               <li
                 key={social.id}
-                className={`opacity-100 transition-all duration-300 ease-in-out relative `}
+                className="opacity-100 transition-all duration-300 ease-in-out relative"
                 onMouseEnter={() => setHoveredIcon(index)}
                 onMouseLeave={() => setHoveredIcon(null)}
               >
                 <a
                   href="#"
-                  className="block relative overflow-visible "
+                  className="block relative overflow-visible"
                   onClick={(e) => e.preventDefault()}
                 >
-                  <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 80 80"
-                    className="overflow-visible"
-                  >
-                    <defs>
-                      {social.isGradient && (
-                        <linearGradient
-                          id={`instagram-gradient-${index}`}
-                          x1="45.337221%"
-                          x2="45.337218%"
-                          y1="93.122416%"
-                          y2="-8.953903%"
-                        >
-                          <stop
-                            offset="0%"
-                            stopColor={animated ? "#FBBC6E" : "#fff"}
-                            className="transition-all duration-700 ease-in-out"
-                          />
-                          <stop
-                            offset="50.773063%"
-                            stopColor={animated ? "#D8456A" : "#fff"}
-                            className="transition-all duration-700 ease-in-out"
-                          />
-                          <stop
-                            offset="100%"
-                            stopColor={animated ? "#4459A9" : "#fff"}
-                            className="transition-all duration-700 ease-in-out"
-                          />
-                        </linearGradient>
-                      )}
-                    </defs>
-
-                    {/* Circle that morphs to splash */}
-                    <path
-                      d={
-                        animated
-                          ? social.splashPath
-                          : "M40 16c-13.254822 0-24 10.747563-24 24.000975C16 53.256335 26.745178 64 40 64s24-10.743665 24-23.999025C64 26.747563 53.253848 16 40 16z"
-                      }
-                      fill={
-                        social.isGradient
-                          ? `url(#instagram-gradient-${index})`
-                          : animated
-                          ? social.color
-                          : "#fff"
-                      }
-                      className="transition-all duration-700 ease-in-out"
-                      style={{
-                        transformOrigin: "center",
-                        transform: animated ? "scale(1.1)" : "scale(1)",
-                      }}
-                    />
-
-                    {/* Icon */}
-                    <foreignObject
-                      x="0"
-                      y="0"
-                      width="80"
-                      height="80"
-                      className="flex items-center justify-center"
+                  {isSafari ? (
+                    // SIMPLE VERSION FOR SAFARI (no path morph, no foreignObject)
+                    <div
+                      className={`
+    w-8 h-8 flex items-center justify-center m-1 rounded-full border
+    transition-all duration-300 ease-in-out
+    hover:scale-110 hover:shadow-lg
+    bg-white
+    ${
+      social.name === "Instagram" &&
+      "hover:bg-gradient-to-br hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600"
+    }
+    ${social.name === "Facebook" && "hover:bg-[#4065B1]"}
+  `}
                     >
-                      <div
+                      <IconComponent
                         className={`
+      text-xl transition-colors duration-300
+      ${social.name === "Instagram" ? "text-red-800 hover:text-white hover:text-lg" : ""}
+      ${social.name === "Facebook" ? "text-red-800 hover:text-white hover:text-lg" : ""}
+    `}
+                      />
+                    </div>
+                  ) : (
+                    // FULL ANIMATED VERSION
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 80 80"
+                      className="overflow-visible"
+                    >
+                      <defs>
+                        {social.isGradient && (
+                          <linearGradient
+                            id={`instagram-gradient-${index}`}
+                            x1="45.337221%"
+                            x2="45.337218%"
+                            y1="93.122416%"
+                            y2="-8.953903%"
+                          >
+                            <stop
+                              offset="0%"
+                              stopColor={animated ? "#FBBC6E" : "#fff"}
+                              className="transition-all duration-700 ease-in-out"
+                            />
+                            <stop
+                              offset="50.773063%"
+                              stopColor={animated ? "#D8456A" : "#fff"}
+                              className="transition-all duration-700 ease-in-out"
+                            />
+                            <stop
+                              offset="100%"
+                              stopColor={animated ? "#4459A9" : "#fff"}
+                              className="transition-all duration-700 ease-in-out"
+                            />
+                          </linearGradient>
+                        )}
+                      </defs>
+
+                      <path
+                        d={
+                          animated
+                            ? social.splashPath
+                            : "M40 16c-13.254822 0-24 10.747563-24 24.000975C16 53.256335 26.745178 64 40 64s24-10.743665 24-23.999025C64 26.747563 53.253848 16 40 16z"
+                        }
+                        fill={
+                          social.isGradient
+                            ? `url(#instagram-gradient-${index})`
+                            : animated
+                            ? social.color
+                            : "#fff"
+                        }
+                        className="transition-all duration-700 ease-in-out"
+                        style={{
+                          transformOrigin: "center",
+                          transform: animated ? "scale(1.1)" : "scale(1)",
+                        }}
+                      />
+
+                      <foreignObject
+                        x="0"
+                        y="0"
+                        width="80"
+                        height="80"
+                        className="flex items-center justify-center"
+                      >
+                        <div
+                          className={`
                           w-full h-full flex items-center justify-center 
                           transition-transform duration-700 ease-in-out
                           ${animated ? "scale-125" : "scale-100"}
                         `}
-                        style={{
-                          transformOrigin: "center center",
-                          transform: animated ? "scale(1.2)" : "scale(1)",
-                        }}
-                      >
-                        <IconComponent
-                          className={`text-2xl ${
-                            animated ? "text-white" : "text-red-800"
-                          }`}
-                        />
-                      </div>
-                    </foreignObject>
-                  </svg>
+                          style={{
+                            transformOrigin: "center center",
+                            transform: animated ? "scale(1.2)" : "scale(1)",
+                          }}
+                        >
+                          <IconComponent
+                            className={`text-2xl ${
+                              animated ? "text-white" : "text-red-800"
+                            }`}
+                          />
+                        </div>
+                      </foreignObject>
+                    </svg>
+                  )}
                 </a>
               </li>
             );
