@@ -13,6 +13,7 @@ const AnimatedSocialIcons = () => {
       icon: FaFacebook,
       color: "#4065B1",
       name: "Facebook",
+      hrefLink: "https://www.facebook.com/share/1F8HK8ey7A/",
       splashPath:
         "M64.390766 7.893908c9.13892 9.586965-3.91575 14.742016.007852 26.63074 3.923603 11.888725 14.324106 14.96342 8.658127 27.114154-5.66598 12.150732-26.532488 3.603945-34.986257 10.31272-8.45377 6.708774-18.30274 6.258113-20.89926-9.745485-2.596518-16.0036-21.680047-20.760404-6.134962-40.13869 15.545086-19.378288 44.21558-23.760404 53.3545-14.17344z",
     },
@@ -21,6 +22,7 @@ const AnimatedSocialIcons = () => {
       icon: FaInstagram,
       color: "url(#instagram-gradient)",
       name: "Instagram",
+      hrefLink: "https://www.instagram.com/alegria_daycare",
       isGradient: true,
       splashPath:
         "M23.18745 12.944335c-6.54792 27.757068-21.791687 24.90854-17.407975 39.16266 4.383713 14.25412 15.53734 9.09612 28.702498 17.354234 13.165158 8.25811 22.386095 16.8613 37.302005-15.81006s-42.04861-68.4639-48.596528-40.706835z",
@@ -53,7 +55,7 @@ const AnimatedSocialIcons = () => {
           {socialIcons.map((social, index) => {
             const IconComponent = social.icon;
             const animated = isAnimated(index);
-
+              console.log(social.hrefLink)
             return (
               <li
                 key={social.id}
@@ -62,9 +64,11 @@ const AnimatedSocialIcons = () => {
                 onMouseLeave={() => setHoveredIcon(null)}
               >
                 <a
-                  href="#"
+                  href={social.hrefLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block relative overflow-visible"
-                  onClick={(e) => e.preventDefault()}
+                  // onClick={(e) => e.preventDefault()}
                 >
                   {isSafari ? (
                     // SIMPLE VERSION FOR SAFARI (no path morph, no foreignObject)
@@ -84,8 +88,16 @@ const AnimatedSocialIcons = () => {
                       <IconComponent
                         className={`
       text-xl transition-colors duration-300
-      ${social.name === "Instagram" ? "text-red-800 hover:text-white hover:text-lg" : ""}
-      ${social.name === "Facebook" ? "text-red-800 hover:text-white hover:text-lg" : ""}
+      ${
+        social.name === "Instagram"
+          ? "text-red-800 hover:text-white hover:text-lg"
+          : ""
+      }
+      ${
+        social.name === "Facebook"
+          ? "text-red-800 hover:text-white hover:text-lg"
+          : ""
+      }
     `}
                       />
                     </div>
