@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import {
   FaUserAlt,
   FaGraduationCap,
@@ -286,10 +287,12 @@ const AboutUsSection = () => {
             {/* Interested in learning more? */}
             {t("about.ctaTitle")}
           </h3>
+         <Link href="/contact">
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300">
             {/* Contact Us Today */}
             {t("about.ctaButtonText")}
           </button>
+         </Link>
         </div>
       </div>
     </div>

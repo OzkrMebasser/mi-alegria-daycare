@@ -109,19 +109,33 @@ const WildernessFooter = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-white/20">
+        <div className="flex flex-col md:flex-row justify-between items-left mt-10 pt-6 border-t border-white/20">
           {/* Copyright */}
-          <div className="text-center md:text-left">
+          <div className="text-left">
             © {currentYear} Mi Alegría Daycare{" "}
             <span className="hidden lg:inline">—</span>
             <span className="block lg:inline">{t("footer.rights")}</span>
+            <Link
+              className="mr-4 text-sm text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+              href="/terms"
+            >
+              Terms and Conditions
+            </Link>
+            <Link
+              className="text-sm text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+              href="/privacy"
+            >
+              Privacy Policy
+            </Link>
           </div>
 
           {/* Design Credit */}
           <div className="text-center md:text-right mt-4 md:mt-0">
             <a
               href="https://oscarmorenodev.vercel.app/"
-              className=" text-sm py-2 px-4 text-white inline-block hover:underline"
+              className="text-sm py-2  text-white relative w-fit block after:block after:content-[''] after:absolute after:h-[.8px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left "
+              // className=" text-sm py-2 px-4 text-white inline-block hover:underline  "
+              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.4)" }}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -17,31 +17,10 @@ const images = [
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-5.png?alt=media&token=ac7a66a2-7256-4245-8f61-ab6050443524",
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-6.jpeg?alt=media&token=4e03359c-cad5-4cf3-a471-9d9a4334eb1a",
   "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-7.png?alt=media&token=ab84529d-7943-4fdf-b579-173fca06b403",
-  "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-8.jpeg?alt=media&token=713e36dc-63aa-4f0e-8f80-09af59230c6c",
-  "https://firebasestorage.googleapis.com/v0/b/mi-alegria-daycare.firebasestorage.app/o/hero-images%2Fhero-images-mialegriadaycare-9.jpeg?alt=media&token=3853d592-2391-4c1d-9d33-258ac62be35c"
-  
 ];
 
 export default function Home() {
   const { t } = useTranslation();
-
-  // const features = [
-  //   {
-  //     icon: FaShieldAlt,
-  //     title: t("home.features.safe.title"),
-  //     description: t("home.features.safe.description"),
-  //   },
-  //   {
-  //     icon: FaGraduationCap,
-  //     title: t("home.features.educational.title"),
-  //     description: t("home.features.educational.description"),
-  //   },
-  //   {
-  //     icon: FaLanguage,
-  //     title: t("home.features.bilingual.title"),
-  //     description: t("home.features.bilingual.description"),
-  //   },
-  // ];
 
   return (
     <>
